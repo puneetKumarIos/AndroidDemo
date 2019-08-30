@@ -58,7 +58,9 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/seprator_view0"
-                    app:layout_constraintHeight_percent="0.20"/>
+                    app:layout_constraintHeight_percent="0.20"
+
+            />
 
             <ImageButton
                     android:id="@+id/profile_button"
@@ -123,6 +125,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="1dp"
                     app:layout_constraintHeight_percent="0.267"
+
             />
             <ImageView
                     android:layout_width="50dp"
@@ -195,6 +198,7 @@
                     android:background="@android:color/transparent"
                     android:id="@+id/seprator_view2"
                     app:layout_constraintHeight_percent="0.02"
+
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/step_container_view"
@@ -210,6 +214,7 @@
                     app:layout_constraintEnd_toEndOf="@id/step_container_view"
                     android:scaleType="fitXY"
                     app:layout_constraintHeight_percent="0.207"
+
             />
 
             <View
@@ -218,6 +223,7 @@
                     android:layout_height="0dp"
                     android:background="@android:color/transparent"
                     app:layout_constraintHeight_percent="0.02"
+
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/banner_imageView"
@@ -235,6 +241,7 @@
                     android:layout_marginEnd ="5dp"
                     android:layout_marginRight="5dp"
                     app:layout_constraintHeight_percent="0.18"
+
                     app:layout_constraintHorizontal_chainStyle="spread_inside"
 
 
@@ -270,6 +277,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginLeft="5dp"
                     app:layout_constraintHeight_percent="0.18"
+
                     app:layout_constraintStart_toEndOf="@id/symptom_bakcground_view"
                     app:layout_constraintEnd_toStartOf="@+id/medicine_bakcground_view"
                     app:layout_constraintTop_toTopOf="@id/symptom_bakcground_view"
@@ -304,6 +312,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginLeft="5dp"
                     app:layout_constraintHeight_percent="0.18"
+
                     app:layout_constraintStart_toEndOf="@id/chat_bakcground_view"
                     app:layout_constraintTop_toTopOf="@id/chat_bakcground_view"
                     app:layout_constraintEnd_toEndOf="@id/banner_imageView"
@@ -343,6 +352,7 @@
                     android:layout_marginEnd ="5dp"
                     android:layout_marginRight="5dp"
                     app:layout_constraintHeight_percent="0.18"
+
                     app:layout_constraintHorizontal_chainStyle="spread_inside"
                     />
 

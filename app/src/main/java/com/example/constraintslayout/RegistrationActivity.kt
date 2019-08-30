@@ -13,7 +13,7 @@ class RegistrationActivity : AppCompatActivity()
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_home_screen_aspect_ratio)
+        setContentView(R.layout.fragment_home_no_scroll)
 
         //setListner()
     }
