@@ -7,7 +7,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.fragment_home_screen_aspect_ratio.*
+import kotlinx.android.synthetic.main.fragment_home_no_scroll_new.*
 
 class HomeScreen : Fragment()
 {
@@ -53,7 +53,7 @@ class HomeScreen : Fragment()
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?
     {
         this.navigation_bar.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-        return inflater.inflate(R.layout.fragment_home_screen_aspect_ratio, container, false)
+        return inflater.inflate(R.layout.fragment_home_no_scroll_new, container, false)
     }
 
 

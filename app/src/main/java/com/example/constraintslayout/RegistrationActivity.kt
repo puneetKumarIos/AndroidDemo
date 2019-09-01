@@ -13,7 +13,7 @@ class RegistrationActivity : AppCompatActivity()
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_home_no_scroll)
+        setContentView(R.layout.fragment_home_no_scroll_new)
 
         //setListner()
     }
