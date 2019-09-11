@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.fragment_onboard_slides.*
 class OnboardSlidesFragment : Fragment()
 {
     private var position   = 0
-    private val mResources = intArrayOf(R.drawable.ic_walk, R.drawable.paperless, R.drawable.paperless_claim)
+    private val mResources = intArrayOf(R.drawable.paperless, R.drawable.ic_policy,R.drawable.ic_walk)
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?

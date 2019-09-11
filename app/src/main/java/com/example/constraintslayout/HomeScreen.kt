@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.fragment_home_screen.*
 class HomeScreen : Fragment()
 {
 
-    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { menuItem ->
+    /*private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { menuItem ->
         when (menuItem.itemId)
         {
             R.id.nav_home ->
@@ -48,11 +48,11 @@ class HomeScreen : Fragment()
             }
         }
         false
-    }
+    }*/
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?
     {
-        this.navigation_bar.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+        //this.navigation_bar.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
         return inflater.inflate(R.layout.fragment_home_screen, container, false)
     }
 
