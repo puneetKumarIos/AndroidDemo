@@ -35,13 +35,15 @@ class RegistrationFragment : Fragment()
 
 
            /*val fragmenttransation = fragmentManager?.beginTransaction()
-           fragmenttransation?.add(R.id.login_container,ForgotPasswordFrg())
+           fragmenttransation?.add(R.id.main_activity_container,ForgotPasswordFrg())
            fragmenttransation?.commit()*/
 
 
-           val  frag = ForgotPasswordFrg()
-           fragmentManager?.beginTransaction()?.replace(R.id.login_container,frag,"")?.addToBackStack("")
-              ?.commit()
+          /* val  frag = ForgotPasswordFrg()
+           fragmentManager?.beginTransaction()?.replace(R.id.main_activity_container,frag,"")?.addToBackStack("")
+              ?.commit()*/
+          (activity as MainActivity).addFragment(ForgotPasswordFrg(),"")
+
       }
 
 
@@ -60,9 +62,12 @@ class RegistrationFragment : Fragment()
 
           println("Login Using Otp Button tapped")
 
-          val  frag = HomeScreen()
-          fragmentManager?.beginTransaction()?.replace(R.id.login_container,frag,"")?.addToBackStack("")
-              ?.commit()
+//          val  frag = HomeScreen()
+//          fragmentManager?.beginTransaction()?.replace(R.id.main_activity_container,frag,"")?.addToBackStack("")
+//              ?.commit()
+
+          (activity as MainActivity).addFragment(HomeScreen(),"")
+
 
       }
 

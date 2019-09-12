@@ -1,5 +1,6 @@
 package com.example.constraintslayout
 import android.os.Bundle
+import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 
 
@@ -13,11 +14,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.fragment_main_activity)
 
-           val fragmenttransation = supportFragmentManager?.beginTransaction()
-           fragmenttransation?.add(R.id.main_activity_container,OnboardScreenFragment())
-           fragmenttransation?.commit()
+        addFragment(OnboardScreenFragment(),OnboardScreenFragment.TAG)
 
         /*initialization()
         tabSelectedListner()
@@ -26,8 +26,24 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-}
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        if (supportFragmentManager.backStackEntryCount <= 1){
+            finish()
+        }
+    }
+
+    public fun addFragment(fragment:Fragment,tag:String){
+        supportFragmentManager.
+            beginTransaction().
+            replace(R.id.main_activity_container,fragment,tag).
+            addToBackStack(tag)
+            .commitAllowingStateLoss()
+    }
+
+
+}
 
 
 

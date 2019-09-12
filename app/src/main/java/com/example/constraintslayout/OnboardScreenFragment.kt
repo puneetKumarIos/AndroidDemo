@@ -38,8 +38,9 @@ class OnboardScreenFragment : Fragment()
 
       private fun initialization()
       {
+          currentTab = 0
           tabCount = mResources.size
-          adapter  = SlidingPagerAdapter(fragmentManager, mResources)
+          adapter  = SlidingPagerAdapter(childFragmentManager, mResources)
           viewPager.adapter = adapter
           tabLayout.setupWithViewPager(viewPager)
           println("tabCount :: $tabCount")
@@ -119,8 +120,9 @@ class OnboardScreenFragment : Fragment()
 
     private fun moveToLoginScreen()
     {
-        fragmentManager?.beginTransaction()
-            ?.replace(R.id.onboard_screen_container,RegistrationFragment(),"")?.addToBackStack("")?.commit()
+        (activity as MainActivity).addFragment(RegistrationFragment(),"")
+//        fragmentManager?.beginTransaction()
+//            ?.replace(R.id.main_activity_container,RegistrationFragment(),"")?.addToBackStack("")?.commit()
     }
 
     private fun setSkipText()
@@ -136,6 +138,10 @@ class OnboardScreenFragment : Fragment()
 
       }
 
+    companion object{
+        val TAG =OnboardScreenFragment::class.java.simpleName
+    }
+
 
 }
 
@@ -150,6 +156,8 @@ class SlidingPagerAdapter(fragmentManager: FragmentManager?, val mResources: Int
     {
         return mResources.size
     }
+
+
 
 
 }
