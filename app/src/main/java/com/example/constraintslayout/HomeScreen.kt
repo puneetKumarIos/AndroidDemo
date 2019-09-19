@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.fragment_home_screen.*
 class HomeScreen : Fragment()
 {
 
-    /*private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { menuItem ->
+    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { menuItem ->
         when (menuItem.itemId)
         {
             R.id.nav_home ->
@@ -23,13 +23,13 @@ class HomeScreen : Fragment()
             }
             R.id.nav_policy ->
             {
-                val fragment = MyPolicy()
+                val fragment = MyPolicyListFrg()
                 showFragment(fragment)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.nav_claims ->
             {
-                val fragment = MyPolicy()
+                val fragment = MyClaimList()
                 showFragment(fragment)
                 return@OnNavigationItemSelectedListener true
             }
@@ -48,20 +48,27 @@ class HomeScreen : Fragment()
             }
         }
         false
-    }*/
+    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?
     {
-        //this.navigation_bar.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
         return inflater.inflate(R.layout.fragment_home_screen, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        this.navigation_bar.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+
     }
 
 
     fun showFragment(fragment:Fragment)
     {
-        val fragmentTransaction = activity?.supportFragmentManager?.beginTransaction()
-        fragmentTransaction?.replace(R.id.home_container,fragment)
-        fragmentTransaction?.commit()
+         (activity as MainActivity).addFragment(fragment,"")
+
+//        val fragmentTransaction = activity?.supportFragmentManager?.beginTransaction()
+//        fragmentTransaction?.replace(R.id.home_container,fragment)
+//        fragmentTransaction?.commit()
 
     }
 
