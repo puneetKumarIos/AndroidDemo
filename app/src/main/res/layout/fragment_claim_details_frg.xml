@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ClaimDetailsFrg"
+        android:background="#F0F0F0"
+        >
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/claim_details_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#157885"
+            android:minHeight="?attr/actionBarSize"
+            android:fontFamily="sans-serif-medium"
+
+            app:title="Claim Details"
+            app:titleTextColor="@color/white"
+            app:navigationIcon="@drawable/ic_navigation_back"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <!--ScrollView-->
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/claim_details_scrollview"
+
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/claim_details_id"
+
+            >
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <!-- Claim Status Card View -->
+            <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/claim_status_cardview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    // claim Status Title
+
+                    <TextView
+                            android:id="@+id/claim_status_title"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Claim Status"
+
+                            android:textColor="#777777"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+                    <!-- Claim Status -->
+                    <TextView
+                            android:id="@+id/claim_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="sans-serif-light"
+                            android:text="Submitted"
+
+                            android:textColor="#555555"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toEndOf="@id/claim_status_title"
+                            app:layout_constraintTop_toTopOf="@id/claim_status_title"
+                            android:layout_marginLeft="10dp"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Claim Id Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/claim_id_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/claim_status_cardview"
+                    >
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+'                    <!-- claim Id Title -->
+
+                    <TextView
+                            android:id="@+id/claim_id_title"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Claim Id"
+
+                            android:textColor="#777777"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+                    <!-- Claim Status -->
+                    <TextView
+                            android:id="@+id/claim_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="sans-serif-light"
+
+                            android:text="Awaited"
+                            android:textColor="#555555"
+                            android:textSize="13sp"
+
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@id/claim_id_title"
+                            app:layout_constraintTop_toTopOf="@id/claim_id_title"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Claim Date Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/claim_date_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/claim_id_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- claim Date Title -->
+
+                    <TextView
+                            android:id="@+id/claim_date_title"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Claim Recieved Date"
+
+                            android:textColor="#777777"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+                    <!-- Claim Date -->
+                    <TextView
+                            android:id="@+id/claim_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="sans-serif-light"
+
+                            android:text="Not Applicable"
+                            android:textColor="#555555"
+                            android:textSize="13sp"
+
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@id/claim_date_title"
+                            app:layout_constraintTop_toTopOf="@id/claim_date_title"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Amount Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/claim_amount_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/claim_date_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- claim Amount Title -->
+
+                    <TextView
+                            android:id="@+id/claim_amount_title"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Estimated Amount"
+
+                            android:textColor="#777777"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+                    <!-- Claim Date -->
+                    <TextView
+                            android:id="@+id/claim_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="sans-serif-light"
+
+                            android:text="25.0"
+                            android:textColor="#555555"
+                            android:textSize="13sp"
+
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@id/claim_amount_title"
+                            app:layout_constraintTop_toTopOf="@id/claim_amount_title"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Policy Details Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/claim_policy_detail_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/claim_amount_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- Policy Details Title -->
+
+                    <TextView
+                            android:id="@+id/policy_details_title"
+                            android:layout_width="150dp"
+                            android:layout_height="20dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Policy Details"
+
+                            android:textColor="#008391"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <!-- Policy Number Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/policy_number_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/claim_policy_detail_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- claim Amount Title -->
+
+                    <TextView
+                            android:id="@+id/policy_number_title"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Policy Number"
+
+                            android:textColor="#777777"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+                    <!-- Claim Date -->
+                    <TextView
+                            android:id="@+id/policy_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="sans-serif-light"
+
+                            android:text="AA00199856"
+                            android:textColor="#555555"
+                            android:textSize="13sp"
+
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@id/policy_number_title"
+                            app:layout_constraintTop_toTopOf="@id/policy_number_title"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Policy Holder Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/policy_holder_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/policy_number_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- claim Amount Title -->
+
+                    <TextView
+                            android:id="@+id/policy_holder_title"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Policy Holder"
+
+                            android:textColor="#777777"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+                    <!-- Claim Date -->
+                    <TextView
+                            android:id="@+id/policy_holder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="sans-serif-light"
+
+                            android:text="tasdeek Raza G"
+                            android:textColor="#555555"
+                            android:textSize="13sp"
+
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@id/policy_holder_title"
+                            app:layout_constraintTop_toTopOf="@id/policy_holder_title"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Patient Details Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/claim_patient_detail_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/policy_holder_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- Policy Details Title -->
+
+                    <TextView
+                            android:id="@+id/patient_details_title"
+                            android:layout_width="150dp"
+                            android:layout_height="20dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Patient Details"
+
+                            android:textColor="#008391"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Member Name Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/member_name_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/claim_patient_detail_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- claim Amount Title -->
+
+                    <TextView
+                            android:id="@+id/member_name_title"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Member/\nPatient's Name"
+
+                            android:textColor="#777777"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+                    <!-- Claim Date -->
+                    <TextView
+                            android:id="@+id/member_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="sans-serif-light"
+
+                            android:text="Tasddek Raza G"
+                            android:textColor="#555555"
+                            android:textSize="13sp"
+
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@id/member_name_title"
+                            app:layout_constraintTop_toTopOf="@id/member_name_title"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Member Id Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/member_id_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/member_name_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- Member Id Title -->
+
+                    <TextView
+                            android:id="@+id/member_id_title"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Member Id"
+
+                            android:textColor="#777777"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+                    <!-- Member Id -->
+                    <TextView
+                            android:id="@+id/member_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="sans-serif-light"
+
+                            android:text="100007866554"
+                            android:textColor="#555555"
+                            android:textSize="13sp"
+
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@id/member_id_title"
+                            app:layout_constraintTop_toTopOf="@id/member_id_title"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Relationship Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/relationship_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/member_id_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- Relationship Title -->
+
+                    <TextView
+                            android:id="@+id/relationship_title"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Relationship"
+
+                            android:textColor="#777777"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+                    <!-- Member Id -->
+                    <TextView
+                            android:id="@+id/relationship"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="sans-serif-light"
+
+                            android:text="Policy Holder"
+                            android:textColor="#555555"
+                            android:textSize="13sp"
+
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@id/relationship_title"
+                            app:layout_constraintTop_toTopOf="@id/relationship_title"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Category Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/category_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/relationship_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- catgory Title -->
+
+                    <TextView
+                            android:id="@+id/catgory_title"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Category"
+
+                            android:textColor="#777777"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+                    <!-- Category -->
+                    <TextView
+                            android:id="@+id/category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="sans-serif-light"
+
+                            android:text="Hospitalization"
+                            android:textColor="#555555"
+                            android:textSize="13sp"
+
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@id/catgory_title"
+                            app:layout_constraintTop_toTopOf="@id/catgory_title"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Diagnosis Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/diagnosis_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/category_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- Diagnosis Title -->
+
+                    <TextView
+                            android:id="@+id/diagnosis_title"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Diagnosis"
+
+                            android:textColor="#777777"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+                    <!-- Category -->
+                    <TextView
+                            android:id="@+id/diagnosis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="sans-serif-light"
+
+                            android:text="Open Heart Surgery"
+                            android:textColor="#555555"
+                            android:textSize="13sp"
+
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@id/diagnosis_title"
+                            app:layout_constraintTop_toTopOf="@id/diagnosis_title"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Provider Details Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/claim_provider_detail_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/diagnosis_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- Policy Details Title -->
+
+                    <TextView
+                            android:id="@+id/provider_details_title"
+                            android:layout_width="150dp"
+                            android:layout_height="20dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Provider Details"
+
+                            android:textColor="#008391"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Provider Name Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/provider_name_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/claim_provider_detail_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- catgory Title -->
+
+                    <TextView
+                            android:id="@+id/provider_name_title"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Provider's Name"
+
+                            android:textColor="#777777"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+                    <!-- Category -->
+                    <TextView
+                            android:id="@+id/provider_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="sans-serif-light"
+
+                            android:text="Miot Hospital"
+                            android:textColor="#555555"
+                            android:textSize="13sp"
+
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@id/provider_name_title"
+                            app:layout_constraintTop_toTopOf="@id/provider_name_title"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Provider City Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/provider_city_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/provider_name_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- catgory Title -->
+
+                    <TextView
+                            android:id="@+id/provider_city_title"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Provider's City"
+
+                            android:textColor="#777777"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            />
+                    <!-- Category -->
+                    <TextView
+                            android:id="@+id/provider_city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="sans-serif-light"
+
+                            android:text="Chennai"
+                            android:textColor="#555555"
+                            android:textSize="13sp"
+
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@id/provider_city_title"
+                            app:layout_constraintTop_toTopOf="@id/provider_city_title"
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Address Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/address_cardview"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="#F0F0F0"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toBottomOf="@id/provider_city_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- Address Title -->
+                    <TextView
+                            android:id="@+id/address_title"
+                            android:layout_width="match_parent"
+                            android:height="0dp"
+
+                            android:background="#F0F0F0"
+                            android:paddingLeft="15dp"
+                            android:gravity="left|center"
+
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Address tp send Original Documents"
+
+                            android:textColor="#008391"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+
+                            android:layout_height="match_parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Address Details Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/address_details_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/address_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- Address Title -->
+                    <TextView
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Apollo munich Health insurance\nClaims Team,1st floor Processing Centre"
+
+                            android:textColor="#555555"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+
+                            />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Seprator Card View -->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/seprator_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/white"
+                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
+                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/address_details_cardview">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

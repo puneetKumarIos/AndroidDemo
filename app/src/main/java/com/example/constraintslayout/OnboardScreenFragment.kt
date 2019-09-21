@@ -120,9 +120,9 @@ class OnboardScreenFragment : Fragment()
 
     private fun moveToLoginScreen()
     {
-        (activity as MainActivity).addFragment(RegistrationFragment(),"")
+        (activity as MainActivity).addFragment(RegistrationFrg(),"")
 //        fragmentManager?.beginTransaction()
-//            ?.replace(R.id.main_activity_container,RegistrationFragment(),"")?.addToBackStack("")?.commit()
+//            ?.replace(R.id.main_activity_container,RegistrationFrg(),"")?.addToBackStack("")?.commit()
     }
 
     private fun setSkipText()
