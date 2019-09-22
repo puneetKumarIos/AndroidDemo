@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -10,7 +10,7 @@
         >
 
     <!--Toolbar-->
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
             android:id="@+id/claim_details_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
             app:layout_constraintTop_toTopOf="parent"
             >
 
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
 
     <!--ScrollView-->
@@ -50,13 +50,13 @@
 
             >
 
-        <android.support.constraint.ConstraintLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
 
             <!-- Claim Status Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/claim_status_cardview"
@@ -64,7 +64,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -110,15 +110,15 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
             <!-- Claim Id Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/claim_id_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
                     app:layout_constraintTop_toBottomOf="@id/claim_status_cardview"
                     >
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -173,14 +173,14 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
             <!-- Claim Date Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/claim_date_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -188,7 +188,7 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/claim_id_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -234,14 +234,14 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
             <!-- Amount Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/claim_amount_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -249,7 +249,7 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/claim_date_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -295,14 +295,14 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
             <!-- Policy Details Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/claim_policy_detail_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -310,7 +310,7 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/claim_amount_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -337,15 +337,15 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
 
             <!-- Policy Number Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/policy_number_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -353,7 +353,7 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/claim_policy_detail_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -399,14 +399,14 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
             <!-- Policy Holder Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/policy_holder_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -414,7 +414,7 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/policy_number_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -460,13 +460,13 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <!-- Patient Details Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/claim_patient_detail_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -474,7 +474,7 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/policy_holder_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -501,13 +501,13 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <!-- Member Name Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/member_name_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -515,7 +515,7 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/claim_patient_detail_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -561,14 +561,14 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
             <!-- Member Id Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/member_id_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -576,7 +576,7 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/member_name_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -622,14 +622,14 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
             <!-- Relationship Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/relationship_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -637,7 +637,7 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/member_id_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -683,14 +683,14 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
             <!-- Category Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/category_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -698,7 +698,7 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/relationship_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -744,14 +744,14 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
             <!-- Diagnosis Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/diagnosis_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -759,7 +759,7 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/category_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -805,13 +805,13 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <!-- Provider Details Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/claim_provider_detail_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -819,7 +819,7 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/diagnosis_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -846,13 +846,13 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <!-- Provider Name Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/provider_name_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -860,7 +860,7 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/claim_provider_detail_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -906,13 +906,13 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <!-- Provider City Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/provider_city_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -920,7 +920,7 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/provider_name_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -966,14 +966,14 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
             <!-- Address Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/address_cardview"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
@@ -983,7 +983,7 @@
 
                     app:layout_constraintTop_toBottomOf="@id/provider_city_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -1011,14 +1011,14 @@
 
                             android:layout_height="match_parent" />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
             <!-- Address Details Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/address_details_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -1027,7 +1027,7 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/address_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -1055,13 +1055,13 @@
 
                             />
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <!-- Seprator Card View -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                     android:id="@+id/seprator_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
@@ -1070,21 +1070,21 @@
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/address_details_cardview">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
 
 
 
-        </android.support.constraint.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </ScrollView>
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,10 +2,11 @@ package com.example.constraintslayout.ui.homeActivity
 
 import android.content.Context
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
-import android.support.v7.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.appcompat.app.AppCompatActivity
 import android.util.AttributeSet
 import android.view.View
+import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
@@ -32,7 +33,7 @@ class HomeActivity : AppCompatActivity()
 
     fun setBottomNav()
     {
-        /*val navView: BottomNavigationView = findViewById(R.id.dashboard_nav_view)
+        val navView: BottomNavigationView = findViewById(R.id.dashboard_nav_view)
         val navController    = findNavController(R.id.nav_host_fragment)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -45,24 +46,52 @@ class HomeActivity : AppCompatActivity()
                 R.id.navigation_more
             )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)*/
+        navView.setupWithNavController(navController)
+        //setupActionBarWithNavController(navController, appBarConfiguration)
 
 
 
 
         //Getting the Navigation Controller
-        navController = Navigation.findNavController(this, R.id.nav_host_fragment)
+        /*navController = Navigation.findNavController(this, R.id.nav_host_fragment)
 
         //Setting the navigation controller to Bottom Nav
-        dashboard_nav_view.setupWithNavController(navController)
+        dashboard_nav_view.setupWithNavController(navController)*/
 
 
         //Setting up the action bar
-        NavigationUI.setupActionBarWithNavController(this, navController)
+        //NavigationUI.setupActionBarWithNavController(this, navController)
     }
 
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        if (supportFragmentManager.backStackEntryCount <= 1){
+            finish()
+        }
+    }
+
+    fun addFragment(fragment: Fragment, tag:String){
+        supportFragmentManager.
+            beginTransaction().
+            replace(R.id.home_activity_container,fragment,tag).
+            addToBackStack(tag)
+            .commitAllowingStateLoss()
+    }
+
+
+    fun hideBottomNav(shouldHide:Boolean)
+    {
+
+        if (shouldHide){
+            dashboard_nav_view.visibility = View.GONE
+
+        }else{
+            dashboard_nav_view.visibility = View.VISIBLE
+
+        }
+
+    }
 
 
 

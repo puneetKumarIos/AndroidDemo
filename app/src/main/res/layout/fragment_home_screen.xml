@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/home_container"
@@ -8,7 +8,7 @@
         android:background="#F0F0F0">
 
     <!-- Top Guide Line -->
-        <android.support.constraint.Guideline
+        <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/parent_top_guideline"
                 app:layout_constraintGuide_percent="0"
                 android:layout_width="wrap_content"
@@ -29,7 +29,7 @@
                 />
 
 
-        <android.support.constraint.Guideline
+        <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/profile_top_guideline"
                 app:layout_constraintGuide_percent="0.0392"
                 android:layout_width="wrap_content"
@@ -50,7 +50,7 @@
 
                 />
 
-        <android.support.constraint.Guideline
+        <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/orange_background_bottom_guideline"
                 app:layout_constraintGuide_percent="0.21"
                 android:layout_width="wrap_content"
@@ -100,7 +100,7 @@
                 app:layout_constraintDimensionRatio="1:1"
                 />
 
-        <android.support.constraint.Guideline
+        <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/profiel_bootom_guideline"
                 app:layout_constraintGuide_percent="0.09"
                 android:layout_width="wrap_content"
@@ -108,7 +108,7 @@
                 android:orientation="horizontal"
 
                 />
-        <android.support.constraint.Guideline
+        <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/step_top_guideline"
                 app:layout_constraintGuide_percent="0.11"
                 android:layout_width="wrap_content"
@@ -198,7 +198,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginLeft="15dp"/>
 
-        <android.support.constraint.Guideline
+        <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/step_bottom_guideline"
                 app:layout_constraintGuide_percent="0.34"
                 android:layout_width="wrap_content"
@@ -206,7 +206,7 @@
                 android:orientation="horizontal"
 
                 />
-        <android.support.constraint.Guideline
+        <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/banner_top_guideline"
                 app:layout_constraintGuide_percent="0.36"
                 android:layout_width="wrap_content"
@@ -228,7 +228,7 @@
 
                 />
 
-        <android.support.constraint.Guideline
+        <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/banner_bottom_guideline"
                 app:layout_constraintGuide_percent="0.55"
                 android:layout_width="wrap_content"
@@ -236,7 +236,7 @@
                 android:orientation="horizontal"
 
                 />
-        <android.support.constraint.Guideline
+        <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/symptom_top_guideline"
                 app:layout_constraintGuide_percent="0.57"
                 android:layout_width="wrap_content"
@@ -461,7 +461,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/policy_bakcground_view"/>
 
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
             android:id="@+id/network_bottom_guideline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -471,4 +471,4 @@
 
 
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

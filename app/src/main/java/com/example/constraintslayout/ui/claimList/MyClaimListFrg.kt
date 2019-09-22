@@ -1,11 +1,12 @@
 package com.example.constraintslayout.ui.claimList
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.LinearLayoutManager
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.*
 import com.example.constraintslayout.*
 import com.example.constraintslayout.ui.cliamDetails.ClaimDetailsFrg
+import com.example.constraintslayout.ui.homeActivity.HomeActivity
 import com.example.constraintslayout.ui.mainActivity.MainActivity
 import kotlinx.android.synthetic.main.fragment_my_claim_list.*
 
@@ -87,8 +88,8 @@ class MyClaimListFrg : Fragment()
         print("Item Clicked at position :: $position")
 
         val fragment = ClaimDetailsFrg()
-        (activity as MainActivity).addFragment(fragment,"")
-
+        (activity as HomeActivity).addFragment(fragment,"")
+        (activity as HomeActivity).hideBottomNav(true)
     }
 
     // ==================================================================================//
@@ -107,7 +108,8 @@ class MyClaimListFrg : Fragment()
 
     private fun setUpRecyclerView()
     {
-        my_claim_recycler.layoutManager      = LinearLayoutManager(this.context)
+        my_claim_recycler.layoutManager      =
+            LinearLayoutManager(this.context)
         this.my_claim_recycler.adapter       =
             MyClaimAdapter(
                 modelArray,

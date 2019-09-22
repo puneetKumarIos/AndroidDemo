@@ -2,13 +2,13 @@ package com.example.constraintslayout.ui.onboard
 
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.support.design.widget.TabLayout
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentPagerAdapter
-import android.support.v4.view.ViewPager
+import com.google.android.material.tabs.TabLayout
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
+import androidx.viewpager.widget.ViewPager
 import android.view.View
 import com.example.constraintslayout.R
 import com.example.constraintslayout.ui.mainActivity.MainActivity
