@@ -163,10 +163,11 @@
                 app:layout_constraintEnd_toEndOf="@+id/step_textView"
                 app:layout_constraintTop_toBottomOf="@+id/step_textView"
                 android:layout_marginTop="7dp"/>
-        <Button
+        <TextView
                 android:text="SYNC NOW"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
+                android:gravity="center"
                 android:id="@+id/sync_now_button"
                 android:textColor="#FFFFFF"
                 android:background="#F27023"
@@ -466,25 +467,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
 
-            app:layout_constraintGuide_percent="0.92" />
-
-
-    <android.support.design.widget.BottomNavigationView
-
-            android:id="@+id/navigation_bar"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/network_bottom_guideline"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:menu="@menu/botom_nav_menu"
-            app:itemTextColor="#F27023"
-            app:itemIconTint="#F27023"
-
-            >
-
-    </android.support.design.widget.BottomNavigationView>
+            app:layout_constraintGuide_percent="0.9" />
 
 
 

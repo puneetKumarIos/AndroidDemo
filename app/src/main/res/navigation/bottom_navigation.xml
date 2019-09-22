@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/bottom_navigation"
+        app:startDestination="@+id/navigation_home">
+
+
+    <fragment
+            android:id="@+id/navigation_home"
+            android:name="com.example.constraintslayout.ui.homeActivity.HomeScreenFrg"
+            android:label="@string/title_home"
+            tools:layout="@layout/fragment_home_screen" />
+
+    <fragment
+            android:id="@+id/navigation_my_claims"
+            android:name="com.example.constraintslayout.ui.claimList.MyClaimListFrg"
+            android:label="@string/title_my_claims"
+            tools:layout="@layout/fragment_my_claim_list" />
+
+
+    <fragment
+            android:id="@+id/navigation_my_policy"
+            android:name="com.example.constraintslayout.ui.policyList.MyPolicyListFrg"
+            android:label="@string/title_my_policy"
+            tools:layout="@layout/fragment_my_policy_list" />
+
+    <fragment
+            android:id="@+id/navigation_stay_active"
+            android:name="com.example.constraintslayout.ui.stayActive.StayActiveFrg"
+            android:label="@string/title_stay_active"
+            tools:layout="@layout/fragment_stay_active" />
+
+    <fragment
+            android:id="@+id/navigation_more"
+            android:name="com.example.constraintslayout.ui.more.MoreFrg"
+            android:label="@string/title_more"
+            tools:layout="@layout/fragment_more" />
+</navigation>
+

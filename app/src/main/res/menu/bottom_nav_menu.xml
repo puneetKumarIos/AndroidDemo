@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:icon="@drawable/home_unselected"
+          android:title="Home"
+          android:id="@+id/navigation_home"
+    />
+
+    <item android:title="My Claims"
+          android:icon="@drawable/claim_unselected"
+          android:id="@+id/navigation_my_claims"
+    />
+
+    <item android:title="My Policy"
+          android:icon="@drawable/policy_unselected"
+          android:id="@+id/navigation_my_policy"
+    />
+    <item android:title="Stay Active"
+          android:icon="@drawable/stay_active_unselected"
+          android:id="@+id/nav_stay_active"
+    />
+    <item android:title="More"
+          android:icon="@drawable/more_unselected"
+          android:id="@+id/navigation_stay_active"
+    />
+</menu>
