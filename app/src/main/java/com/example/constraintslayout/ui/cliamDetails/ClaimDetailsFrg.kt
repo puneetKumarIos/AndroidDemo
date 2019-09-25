@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.constraintslayout.R
+import com.example.constraintslayout.ui.homeActivity.HomeActivity
 
 
 class ClaimDetailsFrg : Fragment()
@@ -18,6 +19,7 @@ class ClaimDetailsFrg : Fragment()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (activity as HomeActivity).hideBottomNav(true)
 
     }
 

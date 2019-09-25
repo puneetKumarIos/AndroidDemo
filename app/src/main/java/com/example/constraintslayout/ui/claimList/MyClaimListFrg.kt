@@ -4,6 +4,10 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.*
+import androidx.navigation.NavDirections
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import com.example.constraintslayout.*
 import com.example.constraintslayout.ui.cliamDetails.ClaimDetailsFrg
 import com.example.constraintslayout.ui.homeActivity.HomeActivity
@@ -18,10 +22,7 @@ class MyClaimListFrg : Fragment()
     // MARK: ********************* variable *********************
     // ==================================================================================//
 
-    var modelArray  =  Array<MyClaimModel>(0){
-        MyClaimModel(
-            "puneet"
-        )
+    var modelArray  =  Array<MyClaimModel>(0){ MyClaimModel("puneet")
     }
 
     // ==================================================================================//
@@ -48,7 +49,12 @@ class MyClaimListFrg : Fragment()
         setUpToolBar()
         initialization()
         setUpRecyclerView()
+    }
 
+    override fun onResume()
+    {
+        super.onResume()
+        (activity as HomeActivity).hideBottomNav(false)
     }
 
 
@@ -87,9 +93,24 @@ class MyClaimListFrg : Fragment()
     {
         print("Item Clicked at position :: $position")
 
-        val fragment = ClaimDetailsFrg()
+        /*val fragment = ClaimDetailsFrg()
         (activity as HomeActivity).addFragment(fragment,"")
-        (activity as HomeActivity).hideBottomNav(true)
+        (activity as HomeActivity).hideBottomNav(true)*/
+
+        //val host = NavHostFragment.create(R.navigation.bottom_navigation)
+        //fragmentManager?.beginTransaction()?.replace(R.id.home_activity_container, host)?.setPrimaryNavigationFragment(host)?.commit()
+
+        /*val action =  R.id.action_navigation_my_claims_to_claimDetailsFrg()
+        action.setNameToShow("AAAAAA123456")
+        findNavController().navigate(action)*/
+
+
+        //Navigation.createNavigateOnClickListener( R.id.action_navigation_my_claims_to_claimDetailsFrg, null)
+
+
+
+
+
     }
 
     // ==================================================================================//
@@ -108,12 +129,8 @@ class MyClaimListFrg : Fragment()
 
     private fun setUpRecyclerView()
     {
-        my_claim_recycler.layoutManager      =
-            LinearLayoutManager(this.context)
-        this.my_claim_recycler.adapter       =
-            MyClaimAdapter(
-                modelArray,
-                { position: Int -> itemClicked(position) })
+        my_claim_recycler.layoutManager      = LinearLayoutManager(this.context)
+        this.my_claim_recycler.adapter       = MyClaimAdapter(modelArray, { position: Int -> itemClicked(position) })
     }
 
 

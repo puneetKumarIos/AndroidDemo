@@ -15,20 +15,66 @@ import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.constraintslayout.R
+import com.example.constraintslayout.ui.claimList.MyClaimListFrg
+import com.example.constraintslayout.ui.more.MoreFrg
+import com.example.constraintslayout.ui.policyList.MyPolicyListFrg
+import com.example.constraintslayout.ui.stayActive.StayActiveFrg
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity()
 {
     private lateinit var navController: NavController
+    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { menuItem ->
+        when (menuItem.itemId)
+        {
+            R.id.navigation_home ->
+            {
+
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_my_policy ->
+            {
+
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_my_claims ->
+            {
+
+                return@OnNavigationItemSelectedListener true
+            }
+
+            R.id.navigation_stay_active ->
+            {
+
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_more ->
+            {
+
+                return@OnNavigationItemSelectedListener true
+            }
+        }
+        false
+    }
 
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
+
+
         setContentView(R.layout.activity_home)
         setBottomNav()
+        //uiSetUp()
+
     }
 
+
+    fun  uiSetUp()
+    {
+        this.dashboard_nav_view.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+
+    }
 
 
     fun setBottomNav()
@@ -64,12 +110,6 @@ class HomeActivity : AppCompatActivity()
     }
 
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-        if (supportFragmentManager.backStackEntryCount <= 1){
-            finish()
-        }
-    }
 
     fun addFragment(fragment: Fragment, tag:String){
         supportFragmentManager.

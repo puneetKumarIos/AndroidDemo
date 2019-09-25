@@ -4,7 +4,10 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
+import androidx.navigation.Navigation.findNavController
 import com.example.constraintslayout.R
+import com.example.constraintslayout.ui.homeActivity.HomeActivity
 
 class MyClaimAdapter(val claimList: Array<MyClaimModel>, val clickListner:(Int) -> Unit) : RecyclerView.Adapter<MyClaimAdapter.ClaimViewHolder>()
 
@@ -34,9 +37,15 @@ class MyClaimAdapter(val claimList: Array<MyClaimModel>, val clickListner:(Int) 
     {
         fun bind(position: Int, clickListener: (Int) -> Unit)
         {
-            itemView.setOnClickListener {
-                clickListener(position)
-            }
+//            itemView.setOnClickListener {
+//                clickListener(position)
+//               // Navigation.createNavigateOnClickListener(R.id.action_navigation_my_claims_to_claimDetailsFrg, null)
+//            }
+
+
+            itemView.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_navigation_my_claims_to_claimDetailsFrg, null))
+
         }
 
     }

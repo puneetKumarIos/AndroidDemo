@@ -17,10 +17,10 @@
     />
     <item android:title="Stay Active"
           android:icon="@drawable/stay_active_unselected"
-          android:id="@+id/nav_stay_active"
+          android:id="@+id/navigation_stay_active"
     />
     <item android:title="More"
           android:icon="@drawable/more_unselected"
-          android:id="@+id/navigation_stay_active"
+          android:id="@+id/navigation_more"
     />
 </menu>

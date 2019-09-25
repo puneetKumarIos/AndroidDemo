@@ -6,18 +6,40 @@
         app:startDestination="@+id/navigation_home">
 
 
+    <!--HOME-->
     <fragment
             android:id="@+id/navigation_home"
             android:name="com.example.constraintslayout.ui.homeActivity.HomeScreenFrg"
             android:label="@string/title_home"
             tools:layout="@layout/fragment_home_screen" />
 
+    <!--MY CLAIM LIST-->
+
     <fragment
             android:id="@+id/navigation_my_claims"
             android:name="com.example.constraintslayout.ui.claimList.MyClaimListFrg"
             android:label="@string/title_my_claims"
-            tools:layout="@layout/fragment_my_claim_list" />
+            tools:layout="@layout/fragment_my_claim_list" >
+        <action
+                android:id="@+id/action_navigation_my_claims_to_claimDetailsFrg"
+                app:destination="@+id/claimDetailsFrg" />
+    </fragment>
 
+    <!--MY CLAIM DETAILS-->
+
+    <fragment
+            android:id="@+id/claimDetailsFrg"
+            android:name="com.example.constraintslayout.ui.cliamDetails.ClaimDetailsFrg"
+            android:label="fragment_claim_details_frg"
+            tools:layout="@layout/fragment_claim_details_frg" >
+        <argument
+                android:name="policyNaame"
+                app:argType="string"
+                android:defaultValue="AA2298" />
+    </fragment>
+
+
+    <!--MY POLICY-->
 
     <fragment
             android:id="@+id/navigation_my_policy"
@@ -25,16 +47,21 @@
             android:label="@string/title_my_policy"
             tools:layout="@layout/fragment_my_policy_list" />
 
+    <!--STAY ACTIVE-->
+
     <fragment
             android:id="@+id/navigation_stay_active"
             android:name="com.example.constraintslayout.ui.stayActive.StayActiveFrg"
             android:label="@string/title_stay_active"
             tools:layout="@layout/fragment_stay_active" />
 
+    <!--MORE-->
+
     <fragment
             android:id="@+id/navigation_more"
             android:name="com.example.constraintslayout.ui.more.MoreFrg"
             android:label="@string/title_more"
             tools:layout="@layout/fragment_more" />
+
 </navigation>
 
