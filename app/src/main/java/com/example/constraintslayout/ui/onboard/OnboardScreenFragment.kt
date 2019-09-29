@@ -23,6 +23,7 @@ class OnboardScreenFragment : Fragment()
         R.drawable.ic_policy,
         R.drawable.ic_walk
     )
+
     lateinit var adapter: SlidingPagerAdapter
     var currentTab = 0
     var tabCount   = 0
@@ -131,8 +132,6 @@ class OnboardScreenFragment : Fragment()
     private fun moveToLoginScreen()
     {
         (activity as MainActivity).addFragment(RegistrationFrg(),"")
-//        fragmentManager?.beginTransaction()
-//            ?.replace(R.id.main_activity_container,RegistrationFrg(),"")?.addToBackStack("")?.commit()
     }
 
     private fun setSkipText()

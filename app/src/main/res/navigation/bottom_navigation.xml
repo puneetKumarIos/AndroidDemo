@@ -45,7 +45,20 @@
             android:id="@+id/navigation_my_policy"
             android:name="com.example.constraintslayout.ui.policyList.MyPolicyListFrg"
             android:label="@string/title_my_policy"
-            tools:layout="@layout/fragment_my_policy_list" />
+            tools:layout="@layout/fragment_my_policy_list" >
+        <action
+                android:id="@+id/action_navigation_my_policy_to_policyDetails"
+                app:destination="@id/policyDetails" />
+    </fragment>
+
+    <!--MY POLICY DETAILS-->
+
+    <fragment
+            android:id="@+id/policyDetails"
+            android:name="com.example.constraintslayout.ui.policyDetails.PolicyDetails"
+            android:label="fragment_policy_details"
+            tools:layout="@layout/fragment_policy_details" />
+
 
     <!--STAY ACTIVE-->
 
