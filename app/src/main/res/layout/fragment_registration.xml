@@ -8,6 +8,8 @@
         android:layout_height="match_parent"
         android:background="#F0F0F0">
 
+
+    <!--Login ScrollView-->
     <ScrollView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -28,22 +30,28 @@
                 android:layout_height="match_parent"
                 tools:context=".ui.mainActivity.MainActivity">
 
+            <!--Title ImageView-->
+
             <ImageView
-                    android:layout_width="0dp"
-                    android:src="@drawable/new_login_healthjinn"
-                    android:layout_height="50dp"
+
                     android:id="@+id/header_imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/new_login_healthjinn"
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="20dp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginLeft="8dp"
-                    android:scaleType="centerInside"
-                    android:layout_marginStart="8dp"
-                    android:visibility="visible"
-            />
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <!--Title ImageView -->
+
             <View
                     android:layout_width="0dp"
                     android:layout_height="120dp"

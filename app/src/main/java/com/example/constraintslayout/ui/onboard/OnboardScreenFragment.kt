@@ -54,7 +54,7 @@ class OnboardScreenFragment : Fragment()
           )
           viewPager.adapter = adapter
           tabLayout.setupWithViewPager(viewPager)
-          println("tabCount :: $tabCount")
+          println("policyTabCount :: $tabCount")
 
 
       }

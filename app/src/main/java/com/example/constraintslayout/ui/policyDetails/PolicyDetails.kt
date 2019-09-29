@@ -18,10 +18,16 @@ import kotlinx.android.synthetic.main.fragment_policy_details.*
 class PolicyDetails : Fragment()
 {
 
-    lateinit var adapter: PoliyPagerAdapter
-    var currentTab = 0
-    var tabCount   = 0
-    val policyArray = Array(20) { MyPolicyModel("puneet") }
+    lateinit var policyAdapter: PoliyPagerAdapter
+    var policyCurrentTab = 0
+    var policyTabCount   = 0
+    val policyArray = Array(5) { MyPolicyModel("puneet") }
+
+    lateinit var memberAdapter: MemberPagerAdapter
+    var memberCurrentTab = 0
+    var memerTabCount   = 0
+    val memberArray = Array(5) { MemberModel("puneet") }
+
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_policy_details, container, false)
@@ -40,17 +46,23 @@ class PolicyDetails : Fragment()
     {
         (activity as HomeActivity).hideBottomNav(true)
 
-        currentTab = 0
-        tabCount = policyArray.size
-        adapter  = PoliyPagerAdapter(childFragmentManager, policyArray)
-        policy_viewPager.adapter = adapter
+        policyCurrentTab = 0
+        policyTabCount = policyArray.size
+        policyAdapter  = PoliyPagerAdapter(childFragmentManager, policyArray)
+        policy_viewPager.adapter = policyAdapter
         policy_tabLayout.setupWithViewPager(policy_viewPager)
 
+        memberCurrentTab = 0
+        memerTabCount = memberArray.size
+        memberAdapter = MemberPagerAdapter(childFragmentManager,memberArray)
+        member_viewPager.adapter = memberAdapter
+        member_tabLayout.setupWithViewPager(member_viewPager)
 
     }
 
     private fun tabSelectedListner()
     {
+        // FOR POLICY
         policy_tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener
         {
             override fun onTabReselected(tab: TabLayout.Tab?)
@@ -68,10 +80,33 @@ class PolicyDetails : Fragment()
 
         })
 
+        // FOR MEMBER
+
+        member_tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener
+        {
+            override fun onTabReselected(tab: TabLayout.Tab?)
+            {
+            }
+
+            override fun onTabUnselected(tab: TabLayout.Tab?)
+            {
+            }
+
+            override fun onTabSelected(tab: TabLayout.Tab?)
+            {
+                member_viewPager.currentItem = tab!!.position
+            }
+
+        })
+
+
+
     }
 
     private fun viewPagerListner()
     {
+        // FOR POLICY
+
         this.policy_viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
 
             override fun onPageScrollStateChanged(state: Int)
@@ -81,8 +116,8 @@ class PolicyDetails : Fragment()
 
             override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
 
-                currentTab = position + 1
-                println("onPageScrolled: $currentTab")
+                policyCurrentTab = position + 1
+                println("onPageScrolled: $policyCurrentTab")
                 println("position: $position")
 
             }
@@ -92,6 +127,29 @@ class PolicyDetails : Fragment()
             }
 
         })
+
+        // FOR MEMBER
+        this.member_viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+
+            override fun onPageScrollStateChanged(state: Int)
+            {
+
+            }
+
+            override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
+
+                memberCurrentTab = position + 1
+                println("onPageScrolled: $memberCurrentTab")
+                println("position: $position")
+
+            }
+
+            override fun onPageSelected(position: Int)
+            {
+            }
+
+        })
+
 
     }
 
@@ -111,6 +169,27 @@ class PoliyPagerAdapter(fragmentManager: FragmentManager?, val policyArray: Arra
     override fun getCount(): Int
     {
         return policyArray.size
+    }
+
+
+
+
+}
+
+
+
+class MemberPagerAdapter(fragmentManager: FragmentManager?, val memberArray: Array<MemberModel>) : FragmentPagerAdapter(fragmentManager) {
+
+    override fun getItem(position: Int): Fragment
+    {
+        val memberCard      = MemberCardFragment()
+        memberCard.position = position
+        return memberCard
+    }
+
+    override fun getCount(): Int
+    {
+        return memberArray.size
     }
 
 
