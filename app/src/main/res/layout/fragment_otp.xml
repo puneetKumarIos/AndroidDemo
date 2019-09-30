@@ -7,6 +7,7 @@
         android:layout_height="match_parent"
         android:background="#F0F0F0">
 
+    <!--Login Via Otp ScrollView-->
     <ScrollView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -22,65 +23,89 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+            <!--Title ImageView-->
             <ImageView
+                    android:id="@+id/header_imageView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+
                     android:src="@drawable/new_login_healthjinn"
-                    android:id="@+id/header_imageView"
+
+                    android:layout_marginTop="30dp"
+
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="30dp"
                     app:layout_constraintEnd_toEndOf="parent"
             />
+
+            <!--Back ImageView-->
             <ImageView
+                    android:id="@+id/back_imageview"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+
                     android:src="@drawable/gray_back"
-                    android:id="@+id/back_imageview"
                     android:scaleType="center"
-                    app:layout_constraintStart_toStartOf="parent"
+
                     android:layout_marginLeft="20dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
+
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
+
+            <!-- Message Textview -->
             <TextView
+                    android:id="@+id/title_textview"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/back_imageview"
+
+                    android:text="OTP has been sent on your phone number."
                     android:gravity="center"
+
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
 
-                    android:text="OTP has been sent on your phone number."
-                    android:id="@+id/title_textview"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/back_imageview"
 
-            <Button
-                    android:text="NEXT"
+                    />
+
+            <!-- NEXT -->
+            <TextView
+                    android:id="@+id/send_otp"
                     android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/next"
+                    android:layout_height="40dp"
+
+                    android:text="NEXT"
+                    android:gravity="center"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/login_rounded_layer"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="50dp"
 
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/title_textview"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginTop="50dp"/>
+                    />
 
-            <Button
-                    android:text="Trouble logging in?"
+            <!-- Login Trouble -->
+            <TextView
+                    android:id="@+id/Trouble_logging_in_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Trouble_logging_in_button"
-                    app:layout_constraintEnd_toEndOf="@+id/next"
-                    app:layout_constraintTop_toBottomOf="@+id/next"
-                    android:layout_marginTop="8dp"
+
+                    android:text="Trouble logging in?"
                     android:background="@android:color/transparent"
-                    android:textColor="#24838F"/>
+                    android:textColor="#24838F"
+                    android:layout_marginTop="8dp"
+
+                    app:layout_constraintEnd_toEndOf="@+id/send_otp"
+                    app:layout_constraintTop_toBottomOf="@+id/send_otp"
+                   />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -88,58 +113,77 @@
 
     </ScrollView>
 
-    <Button
-            android:text="TC  |"
+    <!--TC-->
+    <TextView
+
+            android:id="@+id/tc_button"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:id="@+id/tc_button"
+
+            android:text="TC  |"
             android:gravity="end|center"
             app:layout_constraintHorizontal_chainStyle="packed"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/privacy_policy_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:background="@android:color/transparent"
+            android:textColor="#009688"
 
             android:layout_marginLeft="0dp"
             android:layout_marginStart="0dp"
             android:layout_marginEnd="5dp"
             android:layout_marginRight="5dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/privacy_policy_button"
 
-            app:layout_constraintHorizontal_bias="0.5"
-            android:background="@android:color/transparent"
-            android:textColor="#009688"/>
-    <Button
-            android:text="Privacy Policy |"
+            />
+
+    <!--PP-->
+    <TextView
+            android:id="@+id/privacy_policy_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/privacy_policy_button"
+
+            android:text="Privacy Policy |"
             android:textColor="#24838F"
             android:background="@android:color/transparent"
-            app:layout_constraintStart_toEndOf="@+id/tc_button"
-            app:layout_constraintTop_toTopOf="@id/tc_button"
-            app:layout_constraintEnd_toStartOf="@+id/faqs_button"
+            app:layout_constraintHorizontal_bias="0.5"
+
+
             android:layout_marginLeft="0dp"
             android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
             android:layout_marginEnd="0dp"
             android:layout_marginRight="0dp"
-            app:layout_constraintHorizontal_bias="0.5"/>
-    <Button
-            android:text="FAQs"
+
+            app:layout_constraintStart_toEndOf="@+id/tc_button"
+            app:layout_constraintTop_toTopOf="@id/tc_button"
+            app:layout_constraintEnd_toStartOf="@+id/faqs_button"
+
+            />
+
+    <!--FAQs-->
+    <TextView
+            android:id="@+id/faqs_button"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:id="@+id/faqs_button"
+
+            android:text="FAQs"
             android:textColor="#24838F"
             android:gravity="start|center"
             android:background="@android:color/transparent"
-            app:layout_constraintStart_toEndOf="@+id/privacy_policy_button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/privacy_policy_button"
+            app:layout_constraintHorizontal_bias="0.5"
+
+
             android:layout_marginLeft="5dp"
             android:layout_marginRight="0dp"
             android:layout_marginTop="0dp"
 
-            app:layout_constraintHorizontal_bias="0.5"/>
+            app:layout_constraintStart_toEndOf="@+id/privacy_policy_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/privacy_policy_button"
+
+           />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

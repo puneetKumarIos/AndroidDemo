@@ -35,9 +35,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b479374-2565-4eaf-8eb3-1956449c0177" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/policyDetails/MemberCardFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/policyDetails/MemberModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/member_card.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/otp/OtpEmailFrag.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/textview_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_otp_email.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_registration_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -49,11 +50,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/onboard/OnboardScreenFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/onboard/OnboardScreenFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/policyDetails/PolicyDetails.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/policyDetails/PolicyDetails.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/registration/RegistrationFrg.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/registration/RegistrationFrg.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_policy_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_policy_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/login_rounded_layer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/login_rounded_layer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_forgot_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_forgot_password.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_otp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_otp.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_registration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <ignored path="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/" />
@@ -124,30 +127,45 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_registration.xml">
-          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="31" />
+            <state relative-caret-position="-377">
+              <caret line="71" column="46" lean-forward="true" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
               <folding>
-                <element signature="e#1436#2192#0" />
-                <element signature="e#2199#2975#0" />
-                <element signature="e#2988#3991#0" />
-                <element signature="e#4006#5046#0" />
-                <element signature="e#5059#5723#0" />
-                <element signature="e#5736#6523#0" />
-                <element signature="e#6536#7184#0" />
-                <element signature="e#7197#7847#0" />
-                <element signature="e#7860#8428#0" />
-                <element signature="e#8441#9227#0" />
-                <element signature="e#9240#9900#0" />
-                <element signature="e#9914#10474#0" />
-                <element signature="e#10532#11030#0" />
-                <element signature="e#11035#11660#0" />
-                <element signature="e#11665#12473#0" />
-                <element signature="e#12478#13363#0" />
-                <element signature="e#13368#14155#0" />
-                <element signature="e#14190#15010#0" />
+                <element signature="e#1427#2172#0" />
+                <element signature="e#3561#5076#0" />
+                <element signature="e#11733#12234#0" />
+                <element signature="e#12262#12904#0" />
+                <element signature="e#12943#13755#0" />
+                <element signature="e#13775#14676#0" />
+                <element signature="e#14696#15486#0" />
+                <element signature="e#15508#16344#0" />
               </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_otp_email.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="92" selection-start-line="84" selection-end-line="92" />
+              <folding>
+                <element signature="e#1050#1553#0" />
+                <element signature="e#1601#2154#0" />
+                <element signature="e#2206#2831#0" />
+                <element signature="e#3665#4230#0" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/textview_background.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -155,8 +173,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/registration/RegistrationFrg.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+            <state relative-caret-position="232">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#56#536#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -197,6 +218,7 @@
       <find>emai</find>
       <find>phone</find>
       <find>occu</find>
+      <find>psw</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -205,12 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/font/mobile_font.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/MyclaimModel.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/MyClaimModel.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/MypolicyModel.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/MyPolicyModel.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/MyClaimList.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/my_claim_card.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ClaimDetailsFrg.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/RegistrationFrg.kt" />
@@ -220,7 +236,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/MyClaimListFrg.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_stay_active.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_more.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_onboard_screen.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/MainActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/HomeActivity.kt" />
@@ -254,7 +269,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/policyDetails/MemberCardFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/policyDetails/PolicyDetails.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_policy_details.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/login_rounded_layer.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_otp.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/textview_background.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/otp/OtpEmailFrag.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/registration/RegistrationFrg.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_otp_email.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_registration.xml" />
       </list>
     </option>
@@ -274,8 +296,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -293,6 +315,13 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="ui" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidDemo" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="ui" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="otp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidDemo" type="1abcf292:AndroidViewProjectNode" />
@@ -342,6 +371,7 @@
       <recent name="com.example.constraintslayout.ui.onboard" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.example.constraintslayout.ui.otp" />
       <recent name="com.example.constraintslayout.ui.policyDetails" />
       <recent name="com.example.constraintslayout" />
     </key>
@@ -353,8 +383,8 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
     </key>
     <key name="android.template.parentActivityClass">
       <recent name="" />
@@ -457,11 +487,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
+    <frame x="1" y="23" width="1280" height="709" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.70281994" visible="true" weight="0.21890146" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.70281994" visible="true" weight="0.21486267" />
       <window_info id="Structure" order="2" sideWeight="0.29718006" side_tool="true" weight="0.14620355" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -476,7 +506,7 @@
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49919224" weight="0.32996634" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.41760904" side_tool="true" weight="0.506734" />
       <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49919224" weight="0.32996634" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4749596" weight="0.06902357" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4749596" weight="0.2760943" />
       <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49676898" weight="0.25589225" />
       <window_info anchor="bottom" id="Android Profiler" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.32956383" />
@@ -489,41 +519,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_stay_active.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_more.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_onboard_slides.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/dashboard/DashboardViewModel.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/home/HomeFragment.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/android.arch.navigation/navigation-fragment/1.0.0/d3ddef8af9d3ec5b2cff1988d8231080b31459be/navigation-fragment-1.0.0-sources.jar!/androidx/navigation/fragment/NavHostFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/ActivityThread.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -557,13 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="126" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="65" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -633,12 +621,12 @@
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -818,54 +806,12 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/my_policy_card.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-          <folding>
-            <element signature="e#857#8842#0" />
-            <element signature="e#1061#1859#0" />
-            <element signature="e#1914#2633#0" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/claimList/MyClaimListFrg.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="56" column="15" lean-forward="true" selection-start-line="56" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/policyList/MyPolicyListFrg.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding>
             <element signature="e#54#365#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/member_card.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="526" selection-start-line="526" selection-end-line="526" />
-          <folding>
-            <element signature="e#489#2858#0" />
-            <element signature="e#951#2807#0" />
-            <element signature="e#2003#2737#0" />
-            <element signature="e#2570#4617#0" />
-            <element signature="e#4708#6802#0" />
-            <element signature="e#6861#9369#0" />
-            <element signature="e#9108#11507#0" />
-            <element signature="e#9540#11456#0" />
-            <element signature="e#11256#13641#0" />
-            <element signature="e#11679#13590#0" />
-            <element signature="e#13388#15806#0" />
-            <element signature="e#15553#18003#0" />
           </folding>
         </state>
       </provider>
@@ -884,37 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_policy_details.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="872" lean-forward="true" selection-start-line="872" selection-end-line="872" />
-          <folding>
-            <element signature="e#472#1175#0" />
-            <element signature="e#2106#2613#0" />
-            <element signature="e#2663#3295#0" />
-            <element signature="e#3340#3775#0" />
-            <element signature="e#3832#5902#0" />
-            <element signature="e#5953#8322#0" />
-            <element signature="e#8378#10798#0" />
-            <element signature="e#10857#13307#0" />
-            <element signature="e#13362#15780#0" />
-            <element signature="e#15839#18312#0" />
-            <element signature="e#18364#20763#0" />
-            <element signature="e#20813#23198#0" />
-            <element signature="e#23254#25681#0" />
-            <element signature="e#25735#28272#0" />
-            <element signature="e#28884#30942#0" />
-            <element signature="e#31001#33400#0" />
-            <element signature="e#33467#35975#0" />
-            <element signature="e#36666#38875#0" />
-            <element signature="e#38925#39453#0" />
-            <element signature="e#39503#40135#0" />
-            <element signature="e#40197#41843#0" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/policyDetails/MemberCardFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -932,36 +847,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/registration/RegistrationFrg.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+        <state relative-caret-position="225">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/member_card.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7830">
+          <caret line="522" selection-start-line="520" selection-start-column="20" selection-end-line="522" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/login_rounded_layer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/claimList/MyClaimListFrg.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="30" selection-start-line="27" selection-start-column="4" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_otp.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+          <folding>
+            <element signature="e#1051#1552#0" />
+            <element signature="e#1621#2172#0" />
+            <element signature="e#2262#2882#0" />
+            <element signature="e#2972#3648#0" />
+            <element signature="e#3752#4296#0" />
+            <element signature="e#4035#4937#0" />
+            <element signature="e#4961#5692#0" />
+            <element signature="e#5799#6547#0" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/my_policy_card.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/textview_background.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_policy_details.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="995" column="48" lean-forward="true" selection-start-line="956" selection-start-column="11" selection-end-line="995" selection-end-column="48" />
+          <folding>
+            <element signature="e#472#1175#0" />
+            <element signature="e#35467#37680#0" />
+            <element signature="e#37730#38275#0" />
+            <element signature="e#38325#38957#0" />
+            <element signature="e#39019#40665#0" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/otp/OtpEmailFrag.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/border_button.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_registration_new.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/constraintslayout/ui/registration/RegistrationFrg.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#56#536#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_otp_email.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="92" selection-start-line="84" selection-end-line="92" />
+          <folding>
+            <element signature="e#1050#1553#0" />
+            <element signature="e#1601#2154#0" />
+            <element signature="e#2206#2831#0" />
+            <element signature="e#3665#4230#0" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_registration.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="31" />
+        <state relative-caret-position="-377">
+          <caret line="71" column="46" lean-forward="true" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
           <folding>
-            <element signature="e#1436#2192#0" />
-            <element signature="e#2199#2975#0" />
-            <element signature="e#2988#3991#0" />
-            <element signature="e#4006#5046#0" />
-            <element signature="e#5059#5723#0" />
-            <element signature="e#5736#6523#0" />
-            <element signature="e#6536#7184#0" />
-            <element signature="e#7197#7847#0" />
-            <element signature="e#7860#8428#0" />
-            <element signature="e#8441#9227#0" />
-            <element signature="e#9240#9900#0" />
-            <element signature="e#9914#10474#0" />
-            <element signature="e#10532#11030#0" />
-            <element signature="e#11035#11660#0" />
-            <element signature="e#11665#12473#0" />
-            <element signature="e#12478#13363#0" />
-            <element signature="e#13368#14155#0" />
-            <element signature="e#14190#15010#0" />
+            <element signature="e#1427#2172#0" />
+            <element signature="e#3561#5076#0" />
+            <element signature="e#11733#12234#0" />
+            <element signature="e#12262#12904#0" />
+            <element signature="e#12943#13755#0" />
+            <element signature="e#13775#14676#0" />
+            <element signature="e#14696#15486#0" />
+            <element signature="e#15508#16344#0" />
           </folding>
         </state>
       </provider>

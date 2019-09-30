@@ -6,6 +6,22 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
     </style>
+
+    <!-- Hint Appearance theme. -->
+
+    <style name="HintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/themeBackroundColor</item>
+    </style>
+
+    <!-- Bottom Line theme. -->
+
+    <style name="MyEditTextBottomLine" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">@color/themeBackroundColor</item>
+        <item name="colorControlNormal">@color/themeBackroundColor</item>
+    </style>
+
 
 </resources>
