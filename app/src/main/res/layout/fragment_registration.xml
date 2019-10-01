@@ -256,11 +256,11 @@
                     android:layout_width="0dp"
                     android:layout_height="1dp"
 
-                    android:background="#8C8C8C"
-
                     android:layout_marginStart="8dp"
+
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="50dp"
+                    android:background="#8C8C8C"
 
 
                     app:layout_constraintEnd_toEndOf="parent"
@@ -295,12 +295,12 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
 
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+
+                    android:layout_marginRight="20dp"
                     android:background="@android:color/transparent"
                     android:src="@drawable/facebook"
-
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="20dp"
 
 
                     app:layout_constraintEnd_toStartOf="@+id/google_button"
