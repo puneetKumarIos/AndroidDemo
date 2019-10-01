@@ -11,6 +11,7 @@ import com.example.constraintslayout.ui.mainActivity.MainActivity
 import com.example.constraintslayout.ui.otp.OtpEmailFrag
 import kotlinx.android.synthetic.main.fragment_registration.*
 import com.example.constraintslayout.R
+import com.example.constraintslayout.ui.CreateAccountFrag
 
 
 class RegistrationFrg : Fragment()
@@ -77,6 +78,8 @@ class RegistrationFrg : Fragment()
       }
 
       create_account_button.setOnClickListener {
+          (activity as MainActivity).addFragment(CreateAccountFrag(),"")
+
       }
 
       tc_button.setOnClickListener {

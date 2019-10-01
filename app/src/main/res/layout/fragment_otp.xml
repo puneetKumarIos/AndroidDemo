@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
         android:id="@+id/otp_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -79,329 +79,305 @@
 
                     />
 
-            <!-- OTP Card View -->
+
+            <!-- OTP1 Card View -->
             <androidx.cardview.widget.CardView
 
-                    android:id="@+id/otp_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/otp1_cardview"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
 
+                    app:layout_constraintDimensionRatio="H,1:1"
 
-                    android:layout_marginLeft="20dp"
+                    android:elevation="8dp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardPreventCornerOverlap="false"
+
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="30dp"
-                    android:background="@drawable/textview_background"
+                    android:layout_marginLeft="20dp"
 
-                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/title_textview">
+                    app:layout_constraintEnd_toStartOf="@id/otp2_cardview"
+                    app:layout_constraintTop_toBottomOf="@id/title_textview"
+                    >
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#F0F0F0"
-                        >
+                        android:layout_height="match_parent">
 
-                    <!-- OTP1 Card View -->
-                    <androidx.cardview.widget.CardView
+                    <!-- OTP1 TextView -->
+                    <com.google.android.material.textfield.TextInputLayout
 
-                            android:id="@+id/otp1_cardview"
+                            android:id="@+id/otp1_textview"
                             android:layout_width="0dp"
                             android:layout_height="0dp"
 
-                            app:layout_constraintDimensionRatio="H,1:1"
-                            android:elevation="8dp"
-                            android:divider="@android:color/transparent"
-                            android:dividerHeight="0.0px"
-                            android:clipToPadding="false"
-                            android:clipChildren="false"
-                            app:cardElevation="10dp"
-                            app:cardCornerRadius="5dp"
-                            app:cardPreventCornerOverlap="false"
+                            app:hintTextAppearance="@style/HintText"
 
-                            app:layout_constraintHorizontal_chainStyle="spread_inside"
 
-                            android:layout_marginRight="20dp"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toStartOf="@id/otp2_cardview"
-                            app:layout_constraintTop_toTopOf="parent"
-                            >
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                            <!-- OTP1 TextView -->
-                            <com.google.android.material.textfield.TextInputLayout
-
-                                    android:id="@+id/otp1_textview"
-                                    android:layout_width="0dp"
-                                    android:layout_height="0dp"
-
-                                    app:hintTextAppearance="@style/HintText"
-
-
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-
-                                    >
-
-
-                                <com.google.android.material.textfield.TextInputEditText
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-
-
-                                        android:textColor="#000000"
-                                        android:textCursorDrawable="@color/black"
-                                        android:textAlignment="center"
-                                        android:fontFamily="sans-serif"
-                                        android:inputType="number"
-                                        android:textSize="25sp"
-                                        android:maxLength="1"
-                                        android:textStyle="normal"
-                                        android:background="@null"
-
-
-
-                                        />
-
-                            </com.google.android.material.textfield.TextInputLayout>
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                    </androidx.cardview.widget.CardView>
-
-                    <!-- OTP2 Card View -->
-                    <androidx.cardview.widget.CardView
-
-                            android:id="@+id/otp2_cardview"
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="H,1:1"
-
-
-
-                            android:elevation="8dp"
-                            android:divider="@android:color/transparent"
-                            android:dividerHeight="0.0px"
-                            android:clipToPadding="false"
-                            android:clipChildren="false"
-                            app:cardElevation="10dp"
-                            app:cardCornerRadius="5dp"
-                            app:cardPreventCornerOverlap="false"
-
-                            android:layout_marginRight="20dp"
-
-                            app:layout_constraintStart_toEndOf="@id/otp1_cardview"
-                            app:layout_constraintEnd_toStartOf="@id/otp3_cardview"
-                            app:layout_constraintTop_toTopOf="@id/otp1_cardview"
-                            >
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                            <!-- OTP1 TextView -->
-                            <com.google.android.material.textfield.TextInputLayout
-
-                                    android:id="@+id/otp2_textview"
-                                    android:layout_width="0dp"
-                                    android:layout_height="0dp"
-
-                                    app:hintTextAppearance="@style/HintText"
-
-
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    >
-
-
-                                <com.google.android.material.textfield.TextInputEditText
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-
-
-                                        android:textColor="#000000"
-                                        android:textCursorDrawable="@color/black"
-                                        android:textAlignment="center"
-                                        android:fontFamily="sans-serif"
-                                        android:maxLength="1"
-                                        android:inputType="number"
-                                        android:textSize="25sp"                                        android:textStyle="normal"
-                                        android:background="@null"
-
-
-                                        />
-
-                            </com.google.android.material.textfield.TextInputLayout>
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                    </androidx.cardview.widget.CardView>
-
-                    <!-- OTP3 Card View -->
-                    <androidx.cardview.widget.CardView
-
-                            android:id="@+id/otp3_cardview"
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="H,1:1"
-
-
-                            android:elevation="8dp"
-                            android:divider="@android:color/transparent"
-                            android:dividerHeight="0.0px"
-                            android:clipToPadding="false"
-                            android:clipChildren="false"
-                            app:cardElevation="10dp"
-                            app:cardCornerRadius="5dp"
-                            app:cardPreventCornerOverlap="false"
-
-                            android:layout_marginRight="20dp"
-
-                            app:layout_constraintStart_toEndOf="@id/otp2_cardview"
-                            app:layout_constraintEnd_toStartOf="@id/otp4_cardview"
-                            app:layout_constraintTop_toTopOf="@id/otp2_cardview"
-                            >
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                            <!-- OTP3 TextView -->
-                            <com.google.android.material.textfield.TextInputLayout
-
-                                    android:id="@+id/otp3_textview"
-                                    android:layout_width="0dp"
-                                    android:layout_height="0dp"
-
-                                    app:hintTextAppearance="@style/HintText"
-
-
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    >
-
-
-                                <com.google.android.material.textfield.TextInputEditText
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-
-
-                                        android:textColor="#000000"
-                                        android:textCursorDrawable="@color/black"
-                                        android:textAlignment="center"
-                                        android:fontFamily="sans-serif"
-                                        android:maxLength="1"
-                                        android:inputType="number"
-                                        android:textSize="25sp"                                        android:textStyle="normal"
-                                        android:background="@null"
-
-
-                                        />
-
-                            </com.google.android.material.textfield.TextInputLayout>
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                    </androidx.cardview.widget.CardView>
-
-                    <!-- OTP4 Card View -->
-                    <androidx.cardview.widget.CardView
-
-                            android:id="@+id/otp4_cardview"
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="H,1:1"
-
-
-                            android:elevation="8dp"
-                            android:divider="@android:color/transparent"
-                            android:dividerHeight="0.0px"
-                            android:clipToPadding="false"
-                            android:clipChildren="false"
-                            app:cardElevation="10dp"
-                            app:cardCornerRadius="5dp"
-                            app:cardPreventCornerOverlap="false"
-
-
-                            app:layout_constraintStart_toEndOf="@id/otp3_cardview"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="@id/otp3_cardview"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
                             >
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
+
+                        <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                            <!-- OTP4 TextView -->
-                            <com.google.android.material.textfield.TextInputLayout
-
-                                    android:id="@+id/otp4_textview"
-                                    android:layout_width="0dp"
-                                    android:layout_height="0dp"
-
-                                    app:hintTextAppearance="@style/HintText"
+                                android:layout_height="match_parent"
 
 
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    >
+                                android:textColor="#000000"
+                                android:textCursorDrawable="@color/black"
+                                android:textAlignment="center"
+                                android:fontFamily="sans-serif"
+                                android:inputType="number"
+                                android:textSize="25sp"
+                                android:maxLength="1"
+                                android:textStyle="normal"
+                                android:background="@null"
 
 
-                                <com.google.android.material.textfield.TextInputEditText
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
 
+                                />
 
-                                        android:textColor="#000000"
-                                        android:inputType="number"
-                                        android:textSize="25sp"
-
-                                        android:textCursorDrawable="@color/black"
-                                        android:textAlignment="center"
-                                        android:fontFamily="sans-serif"
-                                        android:maxLength="1"
-                                        android:textStyle="normal"
-                                        android:background="@null"
-
-
-                                        />
-
-                            </com.google.android.material.textfield.TextInputLayout>
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                    </androidx.cardview.widget.CardView>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+            </androidx.cardview.widget.CardView>
+
+            <!-- OTP2 Card View -->
+            <androidx.cardview.widget.CardView
+
+                    android:id="@+id/otp2_cardview"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="H,1:1"
+
+
+
+                    android:elevation="8dp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardPreventCornerOverlap="false"
+
+                    android:layout_marginRight="20dp"
+
+                    app:layout_constraintStart_toEndOf="@id/otp1_cardview"
+                    app:layout_constraintEnd_toStartOf="@id/otp3_cardview"
+                    app:layout_constraintTop_toTopOf="@id/otp1_cardview"
+                    >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- OTP1 TextView -->
+                    <com.google.android.material.textfield.TextInputLayout
+
+                            android:id="@+id/otp2_textview"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+
+                            app:hintTextAppearance="@style/HintText"
+
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            >
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+
+                                android:textColor="#000000"
+                                android:textCursorDrawable="@color/black"
+                                android:textAlignment="center"
+                                android:fontFamily="sans-serif"
+                                android:maxLength="1"
+                                android:inputType="number"
+                                android:textSize="25sp"                                        android:textStyle="normal"
+                                android:background="@null"
+
+
+                                />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             </androidx.cardview.widget.CardView>
 
-            <!-- NEXT -->
+            <!-- OTP3 Card View -->
+            <androidx.cardview.widget.CardView
+
+                    android:id="@+id/otp3_cardview"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="H,1:1"
+
+
+                    android:elevation="8dp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardPreventCornerOverlap="false"
+
+                    android:layout_marginRight="20dp"
+
+                    app:layout_constraintStart_toEndOf="@id/otp2_cardview"
+                    app:layout_constraintEnd_toStartOf="@id/otp4_cardview"
+                    app:layout_constraintTop_toTopOf="@id/otp2_cardview"
+                    >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- OTP3 TextView -->
+                    <com.google.android.material.textfield.TextInputLayout
+
+                            android:id="@+id/otp3_textview"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+
+                            app:hintTextAppearance="@style/HintText"
+
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            >
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+
+                                android:textColor="#000000"
+                                android:textCursorDrawable="@color/black"
+                                android:textAlignment="center"
+                                android:fontFamily="sans-serif"
+                                android:maxLength="1"
+                                android:inputType="number"
+                                android:textSize="25sp"                                        android:textStyle="normal"
+                                android:background="@null"
+
+
+                                />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- OTP4 Card View -->
+            <androidx.cardview.widget.CardView
+
+                    android:id="@+id/otp4_cardview"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="H,1:1"
+
+
+                    android:elevation="8dp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardPreventCornerOverlap="false"
+
+                    android:layout_marginRight="20dp"
+
+
+                    app:layout_constraintStart_toEndOf="@id/otp3_cardview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/otp3_cardview"
+                    >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!-- OTP4 TextView -->
+                    <com.google.android.material.textfield.TextInputLayout
+
+                            android:id="@+id/otp4_textview"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+
+                            app:hintTextAppearance="@style/HintText"
+
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            >
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+
+                                android:textColor="#000000"
+                                android:inputType="number"
+                                android:textSize="25sp"
+
+                                android:textCursorDrawable="@color/black"
+                                android:textAlignment="center"
+                                android:fontFamily="sans-serif"
+                                android:maxLength="1"
+                                android:textStyle="normal"
+                                android:background="@null"
+
+
+                                />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Resend Otp -->
             <TextView
                     android:id="@+id/send_otp"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
 
-                    android:text="NEXT"
+                    android:text="Resend OTP"
                     android:gravity="center"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/login_rounded_layer"
@@ -412,7 +388,7 @@
 
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/otp_cardview"
+                    app:layout_constraintTop_toBottomOf="@+id/otp1_cardview"
                     />
 
             <!-- Login Trouble -->
