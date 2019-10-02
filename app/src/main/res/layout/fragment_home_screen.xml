@@ -81,19 +81,27 @@
 
     <!-- name_textView -->
     <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/name_textView"
-                android:text="WELCOME Piyush Kumar"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/profile_imageview"
-                app:layout_constraintEnd_toStartOf="@+id/notification_imageview"
-                app:layout_constraintTop_toTopOf="@+id/profile_imageview"
-                app:layout_constraintBottom_toBottomOf="@+id/profile_imageview"
-                android:layout_marginEnd="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"/>
+            android:id="@+id/name_textView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:text="WELCOME Piyush Kumar"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+
+            app:layout_constraintStart_toEndOf="@+id/profile_imageview"
+            app:layout_constraintEnd_toStartOf="@+id/notification_imageview"
+            app:layout_constraintTop_toTopOf="@+id/profile_imageview"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_imageview"
+
+
+            />
 
     <!-- notification_imageview -->
     <androidx.appcompat.widget.AppCompatImageView
@@ -188,7 +196,10 @@
                     android:layout_height="wrap_content"
 
                     android:text="My Today's Steps"
-                    android:textColor="#333333"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif"
+                    android:alpha="0.7"
+                    android:textSize="13sp"
                     app:layout_constraintStart_toEndOf="@+id/sneaker_imageView"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/sneaker_top_guideline"
@@ -201,15 +212,31 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
 
-                    android:text="600 /10000"
-                    android:textColor="#333333"
-
                     android:layout_marginTop="7dp"
+                    android:text="600"
+                    android:textColor="#000000"
+
+                    android:textSize="20sp"
 
                     app:layout_constraintStart_toStartOf="@+id/step_textView"
-                    app:layout_constraintEnd_toEndOf="@+id/step_textView"
-                    app:layout_constraintTop_toBottomOf="@+id/step_textView"
-                   />
+                    app:layout_constraintTop_toBottomOf="@+id/step_textView" />
+
+            <!-- Step Total Textview -->
+            <TextView
+                    android:id="@+id/step_total_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="5dp"
+                    android:text="/10,000"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-light"
+
+                    android:textSize="12sp"
+                    android:layout_marginBottom="3dp"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/step_count_textView"
+                    app:layout_constraintStart_toEndOf="@+id/step_count_textView" />
 
 
             <!-- SYNC NOW CARD VIEW -->
@@ -294,7 +321,10 @@
                     android:layout_height="wrap_content"
 
                     android:text="Last synced on 14 Aug 2019 at 6:10 PM"
-                    android:textColor="#333333"
+                    android:textColor="#464646"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
 
                     android:layout_marginRight="15dp"
                     android:layout_marginLeft="15dp"
@@ -432,6 +462,8 @@
                     android:fontFamily="sans-serif"
                     android:textSize="12sp"
                     android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:alpha="0.8"
 
                     android:layout_marginTop="10dp"
 
@@ -514,6 +546,8 @@
                     android:fontFamily="sans-serif"
                     android:textSize="12sp"
                     android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:alpha="0.8"
 
                     android:layout_marginTop="10dp"
 
@@ -594,6 +628,8 @@
                     android:fontFamily="sans-serif"
                     android:textSize="12sp"
                     android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:alpha="0.8"
 
                     android:layout_marginTop="10dp"
 
@@ -677,6 +713,8 @@
                     android:fontFamily="sans-serif"
                     android:textSize="12sp"
                     android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:alpha="0.8"
 
                     android:layout_marginTop="10dp"
 
@@ -761,6 +799,9 @@
                     android:fontFamily="sans-serif"
                     android:textSize="12sp"
                     android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:alpha="0.8"
+
 
                     android:layout_marginTop="10dp"
 
@@ -842,6 +883,8 @@
                     android:fontFamily="sans-serif"
                     android:textSize="12sp"
                     android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:alpha="0.8"
 
                     android:layout_marginTop="10dp"
 
