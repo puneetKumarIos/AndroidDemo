@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/home_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -56,13 +57,12 @@
     <!-- orange_background_bottom_guideline -->
 
     <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/orange_background_bottom_guideline"
-                app:layout_constraintGuide_percent="0.21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
+            android:id="@+id/orange_background_bottom_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
 
-                />
+            app:layout_constraintGuide_percent="0.21203831" />
 
     <!-- profile_imageview -->
 
@@ -161,16 +161,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+            <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/sneaker_top_guideline"
+                    app:layout_constraintGuide_percent="0.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    />
+
             <!-- sneaker ImageView -->
             <ImageView
                     android:id="@+id/sneaker_imageView"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/sneaker"
-                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/sneaker_top_guideline"
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginLeft="15dp"
-                    android:layout_marginTop="15dp"/>
+                   />
 
             <!-- Today Step Textview -->
             <TextView
@@ -182,10 +191,9 @@
                     android:textColor="#333333"
                     app:layout_constraintStart_toEndOf="@+id/sneaker_imageView"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toTopOf="@+id/sneaker_top_guideline"
                     android:layout_marginRight="15dp"
-                    android:layout_marginLeft="15dp"/>
+                    android:layout_marginLeft="30dp"/>
 
             <!-- Step Count Textview -->
             <TextView
@@ -203,22 +211,65 @@
                     app:layout_constraintTop_toBottomOf="@+id/step_textView"
                    />
 
-            <!-- SYNC NOW -->
-            <TextView
-                    android:id="@+id/sync_now_textview"
+
+            <!-- SYNC NOW CARD VIEW -->
+
+            <androidx.cardview.widget.CardView
+
+                    android:id="@+id/sync_now_cardview"
                     android:layout_width="120dp"
                     android:layout_height="30dp"
 
-                    android:text="SYNC NOW"
-                    android:gravity="center"
-                    android:textColor="#FFFFFF"
-                    android:background="#F27023"
+                    android:elevation="8dp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardPreventCornerOverlap="false"
+
+
+
 
                     android:layout_marginTop="10dp"
 
                     app:layout_constraintStart_toStartOf="@+id/step_count_textView"
                     app:layout_constraintTop_toBottomOf="@+id/step_count_textView"
-                    />
+                    >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                    <!-- SYNC NOW -->
+                    <TextView
+                            android:id="@+id/sync_now_textview"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+
+                            android:text="SYNC NOW"
+                            android:gravity="center"
+                            android:textColor="#FFFFFF"
+                            android:background="#F27023"
+
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="12sp"
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
 
             <!-- helthfit_imageView -->
 
@@ -230,7 +281,7 @@
                     android:src="@drawable/health_fit_icon_new"
                     android:scaleType="center"
 
-                    app:layout_constraintTop_toBottomOf="@+id/sync_now_textview"
+                    app:layout_constraintTop_toBottomOf="@+id/sync_now_cardview"
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="10dp"/>
@@ -350,14 +401,27 @@
 
             <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
 
                     android:src="@drawable/symptom_checker"
                     android:layout_marginTop="10dp"
+                    android:scaleType="centerInside"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/symptom_centre_guideline"
+                    />
+
+            <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/symptom_centre_guideline"
+                    app:layout_constraintGuide_percent="0.45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    />
+
             <TextView
                     android:id="@+id/symptom_textView"
                     android:layout_width="0dp"
@@ -365,10 +429,13 @@
 
                     android:text="Symptoms \nChecker"
                     android:textAlignment="center"
+                    android:fontFamily="sans-serif"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
 
                     android:layout_marginTop="10dp"
 
-                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/symptom_centre_guideline"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -416,14 +483,27 @@
 
             <ImageView
                     android:id="@+id/chat_imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
 
                     android:src="@drawable/chat_with_doctor"
+                    android:scaleType="centerInside"
                     android:layout_marginTop="10dp"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/chat_centre_guideline"
+                    />
+
+            <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/chat_centre_guideline"
+                    app:layout_constraintGuide_percent="0.45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    />
+
             <TextView
                     android:id="@+id/chat_doctor_textView"
                     android:layout_width="0dp"
@@ -431,10 +511,13 @@
 
                     android:text="Chat with \nDoctor"
                     android:textAlignment="center"
+                    android:fontFamily="sans-serif"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
 
                     android:layout_marginTop="10dp"
 
-                    app:layout_constraintTop_toBottomOf="@+id/chat_imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/chat_centre_guideline"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -479,15 +562,28 @@
 
             <ImageView
                     android:id="@+id/medicine_imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
 
                     android:src="@drawable/order_medicine"
+                    android:scaleType="centerInside"
+
                     android:layout_marginTop="10dp"
 
                     app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/medicine_centre_guideline"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/medicine_centre_guideline"
+                    app:layout_constraintGuide_percent="0.45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    />
+
             <TextView
                     android:id="@+id/medicine_textView"
                     android:layout_width="0dp"
@@ -495,10 +591,13 @@
 
                     android:text="Order \nMedicine"
                     android:textAlignment="center"
+                    android:fontFamily="sans-serif"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
 
                     android:layout_marginTop="10dp"
 
-                    app:layout_constraintTop_toBottomOf="@+id/medicine_imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/medicine_centre_guideline"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -546,15 +645,28 @@
 
             <ImageView
                     android:id="@+id/network_imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerInside"
 
                     android:src="@drawable/network_hospital"
-                    android:layout_marginTop="10dp"
 
-                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/hospital_centre_guideline"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/hospital_centre_guideline"
+                    app:layout_constraintGuide_percent="0.45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    />
+
             <TextView
                     android:id="@+id/network_textView"
                     android:layout_width="0dp"
@@ -562,10 +674,13 @@
 
                     android:text="Network \nHospital"
                     android:textAlignment="center"
+                    android:fontFamily="sans-serif"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
 
                     android:layout_marginTop="10dp"
 
-                    app:layout_constraintTop_toBottomOf="@+id/network_imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/hospital_centre_guideline"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -614,15 +729,28 @@
 
             <ImageView
                     android:id="@+id/appointment_imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
 
                     android:src="@drawable/doctor_search_book"
+                    android:scaleType="centerInside"
+
                     android:layout_marginTop="10dp"
 
                     app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/appointment_centre_guideline"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/appointment_centre_guideline"
+                    app:layout_constraintGuide_percent="0.45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    />
+
             <TextView
                     android:id="@+id/appointment_textView"
                     android:layout_width="0dp"
@@ -630,10 +758,13 @@
 
                     android:text="Book \nAppointments"
                     android:textAlignment="center"
+                    android:fontFamily="sans-serif"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
 
                     android:layout_marginTop="10dp"
 
-                    app:layout_constraintTop_toBottomOf="@+id/appointment_imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/appointment_centre_guideline"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -679,15 +810,28 @@
 
             <ImageView
                     android:id="@+id/policy_imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
 
                     android:src="@drawable/policy_document"
+                    android:scaleType="centerInside"
+
                     android:layout_marginTop="10dp"
 
                     app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/policy_centre_guideline"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/policy_centre_guideline"
+                    app:layout_constraintGuide_percent="0.45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    />
+
             <TextView
                     android:id="@+id/policy_textView"
                     android:layout_width="0dp"
@@ -695,10 +839,13 @@
 
                     android:text="Policy \nDocuments"
                     android:textAlignment="center"
+                    android:fontFamily="sans-serif"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
 
                     android:layout_marginTop="10dp"
 
-                    app:layout_constraintTop_toBottomOf="@+id/policy_imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/policy_centre_guideline"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>
 
