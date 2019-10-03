@@ -311,7 +311,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/sync_now_cardview"
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginTop="7dp"/>
 
             <!-- lastSync Textview -->
 

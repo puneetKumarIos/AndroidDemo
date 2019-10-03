@@ -22,7 +22,13 @@
             tools:layout="@layout/fragment_my_claim_list" >
         <action
                 android:id="@+id/action_navigation_my_claims_to_claimDetailsFrg"
-                app:destination="@+id/claimDetailsFrg" />
+                app:destination="@+id/claimDetailsFrg"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+
+                />
     </fragment>
 
     <!--MY CLAIM DETAILS-->
@@ -48,7 +54,12 @@
             tools:layout="@layout/fragment_my_policy_list" >
         <action
                 android:id="@+id/action_navigation_my_policy_to_policyDetails"
-                app:destination="@id/policyDetails" />
+                app:destination="@id/policyDetails"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                />
     </fragment>
 
     <!--MY POLICY DETAILS-->
