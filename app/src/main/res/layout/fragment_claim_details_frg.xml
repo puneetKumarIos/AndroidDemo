@@ -60,6 +60,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/claim_status_cardview"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
@@ -122,6 +125,9 @@
                     android:id="@+id/claim_id_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/claim_status_cardview"
@@ -184,6 +190,9 @@
                     android:id="@+id/claim_date_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/claim_id_cardview">
@@ -245,6 +254,9 @@
                     android:id="@+id/claim_amount_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/claim_date_cardview">
@@ -300,19 +312,36 @@
 
             </androidx.cardview.widget.CardView>
 
+            <!-- Amount Seprator -->
+            <View
+                    android:id="@+id/amount_seprator"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+
+                    android:background="#dcdcdc"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/claim_amount_cardview"
+
+                    />
+
 
             <!-- Policy Details Card View -->
             <androidx.cardview.widget.CardView
                     android:id="@+id/claim_policy_detail_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
-                    app:layout_constraintTop_toBottomOf="@id/claim_amount_cardview">
+                    app:layout_constraintTop_toBottomOf="@id/amount_seprator">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="wrap_content">
 
                     <!-- Policy Details Title -->
 
@@ -349,6 +378,9 @@
                     android:id="@+id/policy_number_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/claim_policy_detail_cardview">
@@ -410,6 +442,9 @@
                     android:id="@+id/policy_holder_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/policy_number_cardview">
@@ -465,14 +500,32 @@
 
             </androidx.cardview.widget.CardView>
 
+
+            <!-- Policy Holder Seprator -->
+            <View
+                    android:id="@+id/polocy_holder_seprator"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+
+                    android:background="#dcdcdc"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/policy_holder_cardview"
+
+                    />
+
             <!-- Patient Details Card View -->
             <androidx.cardview.widget.CardView
                     android:id="@+id/claim_patient_detail_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
-                    app:layout_constraintTop_toBottomOf="@id/policy_holder_cardview">
+                    app:layout_constraintTop_toBottomOf="@id/polocy_holder_seprator">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -511,6 +564,9 @@
                     android:id="@+id/member_name_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/claim_patient_detail_cardview">
@@ -572,6 +628,9 @@
                     android:id="@+id/member_id_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/member_name_cardview">
@@ -633,6 +692,9 @@
                     android:id="@+id/relationship_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/member_id_cardview">
@@ -694,6 +756,9 @@
                     android:id="@+id/category_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/relationship_cardview">
@@ -755,6 +820,9 @@
                     android:id="@+id/diagnosis_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/category_cardview">
@@ -810,14 +878,32 @@
 
             </androidx.cardview.widget.CardView>
 
+
+            <!-- Diagnos Seprator -->
+            <View
+                    android:id="@+id/diagnos_seprator"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+
+                    android:background="#dcdcdc"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/diagnosis_cardview"
+
+                    />
+
             <!-- Provider Details Card View -->
             <androidx.cardview.widget.CardView
                     android:id="@+id/claim_provider_detail_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
-                    app:layout_constraintTop_toBottomOf="@id/diagnosis_cardview">
+                    app:layout_constraintTop_toBottomOf="@id/diagnos_seprator">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -856,6 +942,9 @@
                     android:id="@+id/provider_name_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/claim_provider_detail_cardview">
@@ -864,7 +953,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                    <!-- catgory Title -->
+                    <!--provider_name_title-->
 
                     <TextView
                             android:id="@+id/provider_name_title"
@@ -886,7 +975,7 @@
 
 
                             />
-                    <!-- Category -->
+                    <!-- provider_name -->
                     <TextView
                             android:id="@+id/provider_name"
                             android:layout_width="wrap_content"
@@ -894,7 +983,6 @@
 
                             android:layout_marginLeft="10dp"
                             android:fontFamily="sans-serif-light"
-
                             android:text="Miot Hospital"
                             android:textColor="#555555"
                             android:textSize="13sp"
@@ -916,6 +1004,9 @@
                     android:id="@+id/provider_city_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/provider_name_cardview">
@@ -930,6 +1021,7 @@
                             android:id="@+id/provider_city_title"
                             android:layout_width="150dp"
                             android:layout_height="30dp"
+
 
                             android:layout_marginStart="15dp"
                             android:layout_marginLeft="15dp"
@@ -971,17 +1063,31 @@
 
             </androidx.cardview.widget.CardView>
 
+            <!-- city Seprator -->
+            <View
+                    android:id="@+id/city_seprator"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+
+                    android:background="#dcdcdc"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/provider_city_cardview"
+
+                    />
 
             <!-- Address Card View -->
             <androidx.cardview.widget.CardView
                     android:id="@+id/address_cardview"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    android:background="#F0F0F0"
+                    android:background="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
 
-                    app:layout_constraintTop_toBottomOf="@id/provider_city_cardview">
+                    app:layout_constraintTop_toBottomOf="@id/city_seprator">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -991,25 +1097,25 @@
                     <TextView
                             android:id="@+id/address_title"
                             android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
                             android:height="0dp"
-
-                            android:background="#F0F0F0"
-                            android:paddingLeft="15dp"
-                            android:gravity="left|center"
-
+                            android:background="@color/white"
                             android:fontFamily="sans-serif-medium"
-                            android:text="Address tp send Original Documents"
 
+                            android:gravity="left|center"
+                            android:paddingLeft="15dp"
+
+                            android:text="Address to send Original Documents"
                             android:textColor="#008391"
                             android:textSize="13sp"
+
                             android:textStyle="normal"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
 
 
-                            android:layout_height="match_parent" />
+                            app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -1021,8 +1127,9 @@
             <androidx.cardview.widget.CardView
                     android:id="@+id/address_details_cardview"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="@android:color/transparent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@null"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
                     app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
                     app:layout_constraintTop_toBottomOf="@id/address_cardview">
@@ -1040,7 +1147,6 @@
 
                             android:layout_marginStart="15dp"
                             android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
                             android:fontFamily="sans-serif-light"
                             android:text="Apollo munich Health insurance\nClaims Team,1st floor Processing Centre"
 
@@ -1055,29 +1161,351 @@
 
                             />
 
+                    <!-- Address Seprator -->
+                    <View
+                            android:id="@+id/address_seprator"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+
+                            android:background="#dcdcdc"
+                            android:layout_marginTop="10dp"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/address"
+
+                            />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Seprator Card View -->
+
+
+
+
+
+            <!-- Uploaded Documents Container Card View -->
             <androidx.cardview.widget.CardView
-                    android:id="@+id/seprator_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp"
-                    android:background="@color/white"
-                    app:layout_constraintEnd_toEndOf="@id/claim_status_cardview"
-                    app:layout_constraintStart_toStartOf="@id/claim_status_cardview"
+                    android:id="@+id/uploaded_document_container_cardview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="@id/address_details_cardview"
+                    app:layout_constraintStart_toStartOf="@id/address_details_cardview"
                     app:layout_constraintTop_toBottomOf="@id/address_details_cardview">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
+                    <!-- Uploaded Documents Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/uploaded_document_cardview"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@null"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            >
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- uploaded_document_title -->
+
+                            <TextView
+                                    android:id="@+id/uploaded_document_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Uploaded Documents"
+                                    android:gravity="left|center"
+
+                                    android:textColor="#008391"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- View Query Log -->
+                    <TextView
+                            android:id="@+id/queryDocuments"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+
+                            android:background="@drawable/document_border"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:text="View Query Log"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/ts_42"
+                            android:gravity="center|left"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/uploaded_document_cardview"
+
+                            />
+
+                    <!-- View Main Doc -->
+                    <TextView
+                            android:id="@+id/mainDocuments"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+
+                            android:background="@drawable/document_border"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:text="View Main Document"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/ts_42"
+                            android:gravity="center|left"
+
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="5dp"
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/queryDocuments"
+
+                            />
+
+
+                    <!-- Discharge Summary-->
+                    <TextView
+                            android:id="@+id/discharge_summary"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+
+                            android:background="@drawable/document_border"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:text="View Dischage Summary"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/ts_42"
+                            android:gravity="center|left"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="5dp"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/mainDocuments"
+
+                            />
+
+                    <!-- Medical Bills-->
+                    <TextView
+                            android:id="@+id/medical_bills"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+
+                            android:background="@drawable/document_border"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:text="View Medical Bills"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/ts_42"
+                            android:gravity="center|left"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="5dp"
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/discharge_summary"
+
+                            />
+
+                    <!-- Other Documents-->
+                    <TextView
+                            android:id="@+id/other_documents"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+
+                            android:background="@drawable/document_border"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:text="View Other Documnets"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/ts_42"
+                            android:gravity="center|left"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="5dp"
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/medical_bills"
+
+                            />
+
+                    <!-- Cancelled Cheque-->
+                    <TextView
+                            android:id="@+id/cancel_cheque"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+
+                            android:background="@drawable/document_border"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:text="View Cancelled Cheque"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/ts_42"
+                            android:gravity="center|left"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="5dp"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/other_documents"
+
+                            />
+
+
+                    <!-- Uploaded Photo-->
+                    <TextView
+                            android:id="@+id/uploaded_photo"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+
+                            android:background="@drawable/document_border"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:text="View Uploaded Photo"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/ts_42"
+                            android:gravity="center|left"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="5dp"
+
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cancel_cheque"
+
+                            />
+
+
+                    <!-- Adhar Card-->
+                    <TextView
+                            android:id="@+id/adhar_card"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+
+                            android:background="@drawable/document_border"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:text="View Adhar Card"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/ts_42"
+                            android:gravity="center|left"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="5dp"
+
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/uploaded_photo"
+
+                            />
+
+                    <!-- Address Proof-->
+                    <TextView
+                            android:id="@+id/address_proof"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+
+                            android:background="@drawable/document_border"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:text="View Address Proof"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/ts_42"
+                            android:gravity="center|left"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="5dp"
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/adhar_card"
+
+                            />
+
+                    <!-- Address Proof-->
+                    <TextView
+                            android:id="@+id/id_proof"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+
+                            android:background="@drawable/document_border"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:text="View Id Proof"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/ts_42"
+                            android:gravity="center|left"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="5dp"
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/address_proof"
+
+                            />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             </androidx.cardview.widget.CardView>
+
+
+
 
 
 

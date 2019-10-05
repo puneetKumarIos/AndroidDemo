@@ -1,5 +1,61 @@
 <resources>
+
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+
+    <!--Text Size / 3.5-->
+    <dimen name="ts_84">24sp</dimen>
+    <dimen name="ts_72">20.5sp</dimen>
+    <dimen name="ts_60">17.1sp</dimen>
+    <dimen name="ts_54">15.5sp</dimen>
+    <dimen name="ts_48">13.7sp</dimen>
+    <dimen name="ts_42">12sp</dimen>
+    <dimen name="ts_39">11.1sp</dimen>
+    <dimen name="ts_36">10.2sp</dimen>
+    <dimen name="ts_33">9.5sp</dimen>
+    <dimen name="ts_30">8.5sp</dimen>
+
+    <!--other dimen-->
+    <dimen name="default_small_margin">8dp</dimen>
+    <dimen name="person_nag_margin">-8dp</dimen>
+    <dimen name="default_margin">13dp</dimen>
+    <dimen name="default_margin_big">15dp</dimen>
+    <dimen name="policy_card_cornor">5dp</dimen>
+    <dimen name="btn_cornor">30dp</dimen>
+    <dimen name="btn_margin">60dp</dimen>
+    <dimen name="otp_btn_cornor">10dp</dimen>
+
+    <dimen name="progress_default_margin">17px</dimen>
+    <dimen name="default_margin_registration">27px</dimen>
+    <dimen name="btn_top_bottom_padding">12px</dimen>
+    <dimen name="btn_left_right_padding">20px</dimen>
+    <dimen name="btn_min_width">145px</dimen>
+    <dimen name="dots_height">110px</dimen>
+    <dimen name="policy_card">200px</dimen>
+    <dimen name="graph_height">250px</dimen>
+    <dimen name="otp_item_w_h">88px</dimen>
+    <dimen name="signup_btn_bottom_margin">280px</dimen>
+
+    <!-- My Accounts-->
+    <dimen name="profile_img_width">80dp</dimen>
+    <dimen name="profile_img_width_l">85dp</dimen>
+
+    <dimen name="status_bar_height">25dp</dimen>
+
+    <dimen name="default_middle_margin">10dp</dimen>
+    <dimen name="edit_pencil_size">45dp</dimen>
+
+    <dimen name="default_margin_active">28dp</dimen>
+    <dimen name="more_drawable_padding">21dp</dimen>
+
+    <dimen name="nh_recycler_view_height">150dp</dimen>
+
+
+    <dimen name="dash_step_l_height">110dp</dimen>
+    <dimen name="dash_vp_height">120dp</dimen>
+
+    <dimen name="cirular_seekbar">80dp</dimen>
+    <dimen name="home_profile_pic">30dp</dimen>
 </resources>

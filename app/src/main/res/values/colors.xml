@@ -13,8 +13,137 @@
     <color name="themeBackroundColor">#b4b4b4</color>
     <color name="black">#000000</color>
     <color name="darkGrey">#787878</color>
+    <color name="heading">#FF008391</color>
 
 
+    <color name="text_normal">#454343</color>
+    <color name="text_selected">#4AB8F4</color>
+    <color name="semi_trans">#83000000</color>
+    <color name="camera_bg">#181f2b</color>
+
+    <color name="otp_bg_color">#ac949494</color>
+
+    <color name="btn">#f26522</color>
+    <color name="btnpressed">#dc5313</color>
+    <color name="btndisable">#80F26522</color>
+    <color name="ripple_color">#c94b10</color>
+
+    <color name="btn_grey">#FFF0F0F0</color>
+    <color name="btnpressed_grey">#d6d1d1</color>
+    <color name="btndisable_grey">#e1dada</color>
+    <color name="ripple_color_grey">#cac8c8</color>
+
+    <color name="btn_green">#8B6E8688</color>
+    <color name="btnpressed_green">#D6D1D1</color>
+    <color name="btndisable_green">#E1DADA</color>
+    <color name="ripple_color_green">#CAC8C8</color>
+
+
+
+    <color name="google_btn">#dc4b38</color>
+    <color name="google_btn_pressed">#8f3226</color>
+
+    <color name="notificaiton_a_start">#64ce87</color>
+    <color name="notificaiton_a_end">#2cab52</color>
+
+    <color name="notificaiton_b_start">#dd5393</color>
+    <color name="notificaiton_b_end">#dc6843</color>
+
+    <color name="notificaiton_c_start">#dd5393</color>
+    <color name="notificaiton_c_end">#dc6843</color>
+
+    <color name="notificaiton_d_start">#dd5393</color>
+    <color name="notificaiton_d_end">#dc6843</color>
+
+    <color name="notificaiton_e_start">#dd5393</color>
+    <color name="notificaiton_e_end">#dc6843</color>
+
+    <color name="notificaiton_f_start">#dd5393</color>
+    <color name="notificaiton_f_end">#dc6843</color>
+
+    <color name="fb_btn">#48629b</color>
+    <color name="fb_btn_pressed">#253558</color>
+
+    <color name="cumlative_step">#ca74fa</color>
+    <color name="cumlative_step_graph">#68a590b4</color>
+    <color name="cumlative_step_bottom">#13a590b4</color>
+    <color name="my_step">#008391</color>
+    <color name="my_step_graph">#6a00a590</color>
+    <color name="my_step_dark">#0095a5</color>
+    <color name="my_step_bottom">#13062520</color>
+
+    <color name="coach_btn">#997f7f7f</color>
+    <color name="grey_btn">#7c7e9e9d</color>
+    <color name="grey_btnpressed">#d07e9e9d</color>
+
+    <color name="green_btn">#1abc2d</color>
+    <color name="green_btnpressed">#177b0c</color>
+
+    <color name="order_placed">#55acea</color>
+    <color name="order_verified">#e99d2e</color>
+    <color name="order_deliverd">#51ce4e</color>
+    <color name="order_canceled">#ed6c6f</color>
+
+    <color name="grey_trans">#FFD1D1D1</color>
+    <color name="white_trans">#8dffffff</color>
+    <color name="white_grey">#e4e0e0</color>
+    <color name="dialog_bg">#a61e1e1e</color>
+
+
+
+    <color name="account_start">#ce4719</color>
+    <color name="account_mid">#ce5831</color>
+    <color name="account_end">#ce8b74</color>
+
+    <color name="policy_label">#8A000000</color>
+    <color name="policy_label_value">#8A000000</color>
+    <color name="light_black">#FF555555</color>
+    <color name="policy_card_text">#8A000000</color>
+
+    <color name="stroke_color">#FFD1D1D1</color>
+
+    <color name="simpletooltip_background">#a2000000</color>
+    <color name="simpletooltip_text">#ffffff</color>
+    <color name="simpletooltip_arrow">#a2000000</color>
+
+    <color name="background_color_black">#bb000000</color>
+
+    <color name="error_color">#ff3333</color>
+
+    <color name="graph_risk_start_reg_date">#f26522</color>
+
+    <color name="policy_no_data">#3c000000</color>
+
+    <color name="doc_search_card_bg_color">#FFF3F8FF</color>
+    <color name="claim_update_card_bg_color">#FFFFF0DD</color>
+    <color name="policy_soft_copy_card_bg_color">#FFE8FCFF</color>
+    <color name="renewal_card_bg_color">#FFFFECA9</color>
+    <color name="policy_detail_card_bg_color">#FCFFEF</color>
+    <color name="coi_card_bg_color">#FFF4EF</color>
+
+    <color name="consult_primary">#028796</color>
+
+    <color name="btn_blue">#FF008391</color>
+    <color name="btnpressed_blue">#036d79</color>
+    <color name="btndisable_blue">#09c7dc</color>
+    <color name="ripple_color_blue">#15808c</color>
+
+    <color name="list_bg">#d5d5d6</color>
+
+    <color name="consult_text_color_dark">#FF333333</color>
+    <color name="consult_text_color_light">#FF666666</color>
+    <color name="consult_bg_color">#FFF6F6F6</color>
+
+    <color name="screen_bg_color">#f3f3f3</color>
+
+    <color name="goal_achieved">#FF7BB10F</color>
+    <color name="goal_not_acheived">#FFF4B996</color>
+
+    <color name="cancel_status_progress">#f1ebe6</color>
+    <color name="track_status">#179d3b</color>
+
+    <color name="green_text">#77A332</color>
+    <color name="green_text_alpha">#3C90C63D</color>
 
 
 
