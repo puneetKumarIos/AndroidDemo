@@ -9,6 +9,7 @@
             android:id="@+id/policy_info_cardview"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:cardElevation="0dp"
             android:layout_marginTop="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -19,8 +20,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-            <!-- Claim Status -->
 
+            <!-- Background -->
+            <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+
+                    android:background="@drawable/document_border"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            <!-- Claim Status -->
             <TextView
                     android:id="@+id/claim_status"
                     android:layout_width="0dp"

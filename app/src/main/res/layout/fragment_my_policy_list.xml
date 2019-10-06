@@ -31,6 +31,29 @@
     </androidx.appcompat.widget.Toolbar>
 
 
+    <!--Last Sync-->
+    <TextView
+            android:id="@+id/lastSync"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            android:text="Last synced on 05 Oct 2019 1:48 PM"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:alpha="0.5"
+            android:textSize="11sp"
+            android:gravity="center"
+
+            android:layout_marginTop="10dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/my_policy_toolbar"
+
+            />
+
+    <!-- MY POLICY RCYCLERVIEW-->
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/my_policy_recycler"
             android:layout_width="0dp"
@@ -39,11 +62,33 @@
 
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            app:layout_constraintTop_toBottomOf="@id/my_policy_toolbar"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lastSync"
+            app:layout_constraintBottom_toTopOf="@+id/addNewPlicy"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="10dp"
+            />
+
+    <!--Add New Claim-->
+    <TextView
+            android:id="@+id/addNewPlicy"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+
+            android:text="ADD NEW POLICY"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="15sp"
+            android:background="@drawable/login_rounded_layer"
+            android:gravity="center"
+
+            android:layout_marginRight="15dp"
             android:layout_marginBottom="60dp"
+            android:layout_marginLeft="15dp"
+
+            app:layout_constraintStart_toStartOf="@id/my_policy_recycler"
+            app:layout_constraintEnd_toEndOf="@id/my_policy_recycler"
+            app:layout_constraintBottom_toBottomOf="parent"
             />
 
 

@@ -52,13 +52,22 @@
     <androidx.cardview.widget.CardView
             android:id="@+id/select_policy_card_view"
             android:layout_width="0dp"
-            android:layout_height="50dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/select_policy_textView"
+            android:layout_height="40dp"
+
+            app:cardCornerRadius="20dp"
+            android:clipToPadding="true"
+            android:clipChildren="true"
+            app:cardBackgroundColor="#EBEBEB"
+
+
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:layout_marginTop="10dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/select_policy_textView"
+
             >
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -69,37 +78,46 @@
                     android:id="@+id/choose_policy_txt_vw"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
+
+                    android:drawableRight="@drawable/dropdown_orange"
                     android:text="AA00195789"
                     android:gravity="left|center"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+
+
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                    android:id="@+id/drop_down_imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/dropdown_orange"
-
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginRight="10dp"
-
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.cardview.widget.CardView>
 
+
+    <!--Last Sync-->
+    <TextView
+            android:id="@+id/lastSync"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            android:text="Last synced on 05 Oct 2019 1:48 PM"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:alpha="0.5"
+            android:textSize="11sp"
+            android:gravity="center"
+
+            android:layout_marginTop="10dp"
+
+            app:layout_constraintStart_toStartOf="@id/select_policy_card_view"
+            app:layout_constraintEnd_toEndOf="@id/select_policy_card_view"
+            app:layout_constraintTop_toBottomOf="@id/select_policy_card_view"
+
+            />
 
     <!--Select Policy Recycler View-->
 
@@ -110,8 +128,8 @@
 
             android:background="@android:color/transparent"
 
-            app:layout_constraintTop_toBottomOf="@id/select_policy_card_view"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lastSync"
+            app:layout_constraintBottom_toTopOf="@+id/addNewClaim"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
 
@@ -119,8 +137,29 @@
             android:layout_marginLeft="15dp"
             android:layout_marginEnd="15dp"
             android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            />
+
+    <!--Add New Claim-->
+    <TextView
+            android:id="@+id/addNewClaim"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+
+            android:text="ADD NEW CLAIM"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="15sp"
+            android:background="@drawable/login_rounded_layer"
+            android:gravity="center"
+
+            android:layout_marginRight="15dp"
             android:layout_marginBottom="60dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+
+            app:layout_constraintStart_toStartOf="@id/my_claim_recycler"
+            app:layout_constraintEnd_toEndOf="@id/my_claim_recycler"
+            app:layout_constraintBottom_toBottomOf="parent"
             />
 
 
