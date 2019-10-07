@@ -18,7 +18,7 @@ class PolicyCardFragment : Fragment()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?
     {
-        return inflater.inflate(R.layout.my_policy_card, container, false)
+        return inflater.inflate(R.layout.policy_details_card, container, false)
     }
 
 

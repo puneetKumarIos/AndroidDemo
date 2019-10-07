@@ -9,7 +9,9 @@
             android:id="@+id/policy_info_cardview"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="10dp"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -25,8 +27,6 @@
                     android:id="@+id/policy_card_border_back"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-
-                    android:background="@drawable/document_border"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -188,8 +188,9 @@
             <ImageView
                     android:id="@+id/view_claim_image_view"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="0dp"
+                    android:visibility="invisible"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.45"
                     app:layout_constraintStart_toStartOf="parent"
@@ -199,9 +200,9 @@
             <TextView
                     android:id="@+id/policy_textView"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:layout_marginLeft="10dp"
-
+                    android:visibility="invisible"
                     android:fontFamily="sans-serif-medium"
                     android:text="VIEW"
                     android:textColor="#777777"

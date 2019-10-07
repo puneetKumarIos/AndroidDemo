@@ -14,6 +14,7 @@ import com.example.constraintslayout.ui.homeActivity.HomeActivity
 import com.example.constraintslayout.ui.policyList.MyPolicyModel
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.fragment_policy_details.*
+import kotlinx.android.synthetic.main.my_policy_card.*
 
 class PolicyDetails : Fragment()
 {

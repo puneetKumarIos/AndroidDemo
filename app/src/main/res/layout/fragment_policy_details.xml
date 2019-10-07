@@ -50,7 +50,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                >
 
 
             <!--Policy ViewPager-->
@@ -58,7 +59,7 @@
                     android:id="@+id/policy_viewPager"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
-                    android:background="@android:color/transparent"
+                    android:background="@null"
 
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +71,8 @@
             <com.google.android.material.tabs.TabLayout
                     android:id="@+id/policy_tabLayout"
                     android:layout_width="0dp"
-                    android:layout_height="45dp"
+                    android:layout_height="30dp"
+
                     android:background="#F0F0F0"
 
                     app:layout_constraintTop_toBottomOf="@id/policy_viewPager"
@@ -88,7 +90,7 @@
             <View
                     android:id="@+id/policy_seprator"
                     android:layout_width="0dp"
-                    android:layout_height="20dp"
+                    android:layout_height="2dp"
                     android:background="#F0F0F0"
                     app:layout_constraintTop_toBottomOf="@id/policy_tabLayout"
                     app:layout_constraintStart_toStartOf="parent"
@@ -102,6 +104,8 @@
                     android:id="@+id/my_profile_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/policy_seprator">
@@ -149,9 +153,11 @@
 
             <!-- Name Card View -->
             <androidx.cardview.widget.CardView
-                    android:id="@+id/name_cardview"
+                    android:id="@+id/member_name_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/my_profile_cardview"
                     app:layout_constraintStart_toStartOf="@id/my_profile_cardview"
                     app:layout_constraintTop_toBottomOf="@id/my_profile_cardview">
@@ -213,9 +219,11 @@
                     android:id="@+id/member_id_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/name_cardview">
+                    app:layout_constraintTop_toBottomOf="@id/member_name_cardview">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -274,6 +282,8 @@
                     android:id="@+id/phone_number_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/member_id_cardview">
@@ -335,6 +345,8 @@
                     android:id="@+id/email_id_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/phone_number_cardview">
@@ -396,6 +408,8 @@
                     android:id="@+id/relationship_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/email_id_cardview">
@@ -457,6 +471,8 @@
                     android:id="@+id/gender_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/relationship_cardview">
@@ -518,6 +534,8 @@
                     android:id="@+id/dob_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/gender_cardview">
@@ -579,6 +597,8 @@
                     android:id="@+id/occupation_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/dob_cardview">
@@ -641,6 +661,8 @@
                     android:id="@+id/address_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/occupation_cardview">
@@ -693,19 +715,52 @@
 
                             />
 
+                    !--seprator -->
+
+                    <View
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+
+                            android:background="@color/white"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/address"
+
+                            />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             </androidx.cardview.widget.CardView>
+
+            !-- nominee_seprator -->
+            <View
+                    android:id="@+id/nominee_seprator"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+
+                    android:background="#dcdcdc"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/address_cardview"
+
+                    />
 
             <!-- Nominee Card View -->
             <androidx.cardview.widget.CardView
                     android:id="@+id/nominee_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/address_cardview">
+                    app:layout_constraintTop_toBottomOf="@id/nominee_seprator">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -753,6 +808,8 @@
                     android:id="@+id/nominee_name_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/nominee_cardview"
                     app:layout_constraintStart_toStartOf="@id/nominee_cardview"
                     app:layout_constraintTop_toBottomOf="@id/nominee_cardview">
@@ -814,6 +871,8 @@
                     android:id="@+id/nominee_relationship_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/nominee_name_cardview">
@@ -871,14 +930,35 @@
             </androidx.cardview.widget.CardView>
 
 
+            !-- nominee_relationship_seprator -->
+            <View
+                    android:id="@+id/nominee_relationship_seprator"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+
+                    android:background="#dcdcdc"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/nominee_relationship_cardview"
+
+                    />
+
             <!-- Member Profile Card View -->
             <androidx.cardview.widget.CardView
                     android:id="@+id/member_profile_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/nominee_relationship_cardview">
+                    app:layout_constraintTop_toBottomOf="@id/nominee_relationship_seprator">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -893,7 +973,7 @@
 
                             android:layout_marginStart="15dp"
                             android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="15dp"
                             android:fontFamily="sans-serif-medium"
                             android:text="Members Profile"
 
@@ -927,7 +1007,7 @@
             <androidx.viewpager.widget.ViewPager
                     android:id="@+id/member_viewPager"
                     android:layout_width="0dp"
-                    android:layout_height="350dp"
+                    android:layout_height="380dp"
                     android:background="@android:color/transparent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -936,11 +1016,12 @@
 
             </androidx.viewpager.widget.ViewPager>
 
+
             <!--Member TabLayout-->
             <com.google.android.material.tabs.TabLayout
                     android:id="@+id/member_tabLayout"
                     android:layout_width="0dp"
-                    android:layout_height="45dp"
+                    android:layout_height="30dp"
                     android:background="#F0F0F0"
 
                     app:layout_constraintTop_toBottomOf="@id/member_viewPager"
@@ -959,6 +1040,8 @@
                     android:id="@+id/payment_details_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/member_tabLayout">
@@ -1000,6 +1083,8 @@
                     android:id="@+id/premium_paid_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/payment_details_cardview"
                     app:layout_constraintStart_toStartOf="@id/payment_details_cardview"
                     app:layout_constraintTop_toBottomOf="@id/payment_details_cardview">
@@ -1055,15 +1140,36 @@
 
             </androidx.cardview.widget.CardView>
 
+            !-- premium_seprator -->
+            <View
+                    android:id="@+id/premium_seprator"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+
+                    android:background="#dcdcdc"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/premium_paid_cardview"
+
+                    />
+
 
             <!-- Dispatch Details Card View -->
             <androidx.cardview.widget.CardView
                     android:id="@+id/dispatch_details_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/premium_paid_cardview">
+                    app:layout_constraintTop_toBottomOf="@id/premium_seprator">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -1102,6 +1208,8 @@
                     android:id="@+id/date_of_dipatch_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/dispatch_details_cardview"
                     app:layout_constraintStart_toStartOf="@id/dispatch_details_cardview"
                     app:layout_constraintTop_toBottomOf="@id/dispatch_details_cardview">
@@ -1162,6 +1270,8 @@
                     android:id="@+id/status_of_dipatch_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/date_of_dipatch_cardview"
                     app:layout_constraintStart_toStartOf="@id/date_of_dipatch_cardview"
                     app:layout_constraintTop_toBottomOf="@id/date_of_dipatch_cardview">
@@ -1223,6 +1333,8 @@
                     android:id="@+id/date_of_delivery_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="@id/status_of_dipatch_cardview"
                     app:layout_constraintStart_toStartOf="@id/status_of_dipatch_cardview"
                     app:layout_constraintTop_toBottomOf="@id/status_of_dipatch_cardview">
