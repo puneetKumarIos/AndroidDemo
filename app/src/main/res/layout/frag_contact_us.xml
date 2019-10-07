@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="#f0f0f0"
+    android:orientation="vertical">
+     />
+
+
+    <ScrollView
+        android:id="@+id/base_child_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/main_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="We are always there to help you!"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="@dimen/ts_48" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Write us about your issue"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ts_48" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/card_border"
+                android:layout_marginTop="@dimen/default_margin"
+                android:orientation="vertical"
+                android:padding="@dimen/default_margin">
+
+                <TextView
+                    android:id="@+id/policy_heading"
+                    style="@style/heading_style"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:text="Select Policy No" />
+
+                <Spinner
+                    android:id="@+id/policy_spin"
+                    style="@style/spinner_basic" />
+
+                <TextView
+                    android:id="@+id/case_heading"
+                    style="@style/heading_style"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:text="Case Type" />
+
+                <Spinner
+                    android:id="@+id/case_type_spin"
+                    style="@style/spinner_basic" />
+
+                <TextView
+                    android:id="@+id/subject_heading"
+                    style="@style/heading_style"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:text="Select Subject" />
+
+                <Spinner
+                    android:id="@+id/subject_spin"
+                    style="@style/spinner_basic" />
+
+                <TextView
+                    android:id="@+id/query_heading"
+                    style="@style/heading_style"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:text="Select Query Type" />
+
+                <Spinner
+                    android:id="@+id/query_spin"
+                    style="@style/spinner_basic" />
+
+                <EditText
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:background="@drawable/grey_border"
+                    android:gravity="top"
+                    android:hint="Explain your issue here"
+                    android:minLines="5"
+                    android:padding="@dimen/default_small_margin"
+                    android:importantForAutofill="noExcludeDescendants"
+                    android:textSize="@dimen/ts_42" />
+
+                <TextView
+                    android:id="@+id/selectDocImage"
+                    style="@style/heading_style"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:text="Select Image/Document" />
+
+                <LinearLayout
+                    android:id="@+id/doc_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/doc_name"
+                        style="@style/heading_style"
+                        android:layout_marginRight="@dimen/default_small_margin"
+                        android:textSize="@dimen/ts_36"
+                        android:layout_weight="1"
+                        android:text="No files attached"
+                        android:textColor="@color/light_black" />
+
+                    <TextView
+                        android:id="@+id/upload_btn"
+                        style="@style/fill_button"
+                        android:layout_width="wrap_content"
+                        android:text="UPLOAD" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/send"
+                    style="@style/fill_button"
+                    android:layout_width="@dimen/signup_btn_bottom_margin"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/default_margin"
+                    android:text="SEND" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_margin"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/stroke_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:minWidth="50dp"
+                    android:text="OR"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/ts_42" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/stroke_color" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/card_border"
+                android:drawableRight="@drawable/chat"
+                android:padding="@dimen/default_margin"
+                android:text="Chat with us"
+                android:visibility="gone"
+                android:textColor="@color/heading"
+                android:textSize="@dimen/ts_48" />
+
+            <TextView
+                android:id="@+id/call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                style="@style/card_border"
+                android:drawableRight="@drawable/call"
+                android:padding="@dimen/default_margin"
+                android:text="Call us"
+                android:visibility="gone"
+                android:textColor="@color/heading"
+                android:textSize="@dimen/ts_48" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

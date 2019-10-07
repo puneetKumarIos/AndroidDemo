@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item><layer-list>
+        <item android:drawable="@drawable/user_detail_edit_text"/>
+        <item android:right="@dimen/default_margin">
+            <bitmap android:gravity="center_horizontal|right" android:src="@drawable/dropdown">
+                <padding android:right="5dp" />
+            </bitmap>
+        </item>
+    </layer-list></item>
+
+</selector>

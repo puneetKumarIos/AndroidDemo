@@ -11,7 +11,8 @@ import com.example.constraintslayout.ui.mainActivity.MainActivity
 import com.example.constraintslayout.ui.otp.OtpEmailFrag
 import kotlinx.android.synthetic.main.fragment_registration.*
 import com.example.constraintslayout.R
-import com.example.constraintslayout.ui.CreateAccountFrag
+import com.example.constraintslayout.ui.ContactUs.ContactUsEmailFrag
+import com.example.constraintslayout.ui.CreateAccount.CreateAccountFrag
 
 
 class RegistrationFrg : Fragment()
@@ -66,6 +67,8 @@ class RegistrationFrg : Fragment()
       }
 
       login_trouble_button.setOnClickListener {
+
+          (activity as MainActivity).addFragment(ContactUsEmailFrag(),"")
 
       }
 

@@ -99,1296 +99,1325 @@
                     />
 
 
-            <!-- My Profile Card View -->
+            <!-- Policy Background Container -->
             <androidx.cardview.widget.CardView
-                    android:id="@+id/my_profile_cardview"
+                    android:id="@+id/policy_background_conainer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:cardBackgroundColor="@color/white"
                     app:cardElevation="0dp"
+                    app:cardCornerRadius="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/policy_seprator">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Policy Details Title -->
-
-                    <TextView
-                            android:id="@+id/my_profile_title"
-                            android:layout_width="150dp"
-                            android:layout_height="20dp"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="My Profile"
-
-                            android:textColor="#008391"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-
-                    <androidx.appcompat.widget.AppCompatImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/edit"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- Name Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/member_name_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="@id/my_profile_cardview"
-                    app:layout_constraintStart_toStartOf="@id/my_profile_cardview"
-                    app:layout_constraintTop_toBottomOf="@id/my_profile_cardview">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Name Title -->
-
-                    <TextView
-                            android:id="@+id/name_title"
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-
-                            android:text="Name"
-                            android:textColor="#777777"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:fontFamily="sans-serif-medium"
-
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-                    <!-- Name -->
-                    <TextView
-                            android:id="@+id/name"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-light"
-
-                            android:text="Mr Tasdeek Raza G"
-                            android:textColor="#555555"
-                            android:textSize="13sp"
-
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/name_title"
-                            app:layout_constraintTop_toTopOf="@id/name_title"
-
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- Member Id Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/member_id_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/member_name_cardview">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Member Id Title -->
-
-                    <TextView
-                            android:id="@+id/member_id_title"
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Member Id"
-
-                            android:textColor="#777777"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-                    <!-- Member Id -->
-                    <TextView
-                            android:id="@+id/member_id"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-light"
-
-                            android:text="100075859"
-                            android:textColor="#555555"
-                            android:textSize="13sp"
-
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/member_id_title"
-                            app:layout_constraintTop_toTopOf="@id/member_id_title"
-
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- Phone Number Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/phone_number_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/member_id_cardview">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Phone Number Title -->
-                    <TextView
-                            android:id="@+id/phone_number_title"
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Phone Number"
-
-                            android:textColor="#777777"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-
-                    <!-- Phone Number -->
-                    <TextView
-                            android:id="@+id/phone_number"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-light"
-
-                            android:text="9971385593"
-                            android:textColor="#555555"
-                            android:textSize="13sp"
-
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/phone_number_title"
-                            app:layout_constraintTop_toTopOf="@id/phone_number_title"
-
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- Email Id Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/email_id_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/phone_number_cardview">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- email Title -->
-                    <TextView
-                            android:id="@+id/email_title"
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Email Id"
-
-                            android:textColor="#777777"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-
-                    <!-- Email -->
-                    <TextView
-                            android:id="@+id/email"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-light"
-
-                            android:text="Kumar.puneet119@gmail.com"
-                            android:textColor="#555555"
-                            android:textSize="13sp"
-
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/email_title"
-                            app:layout_constraintTop_toTopOf="@id/email_title"
-
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- RelationShip Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/relationship_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/email_id_cardview">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- relationship Title -->
-                    <TextView
-                            android:id="@+id/relationship_title"
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Relationship with\nPolicy Holder"
-
-                            android:textColor="#777777"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-
-                    <!-- RelationShip -->
-                    <TextView
-                            android:id="@+id/relationship"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-light"
-
-                            android:text="Policy Holder"
-                            android:textColor="#555555"
-                            android:textSize="13sp"
-
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/relationship_title"
-                            app:layout_constraintTop_toTopOf="@id/relationship_title"
-
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- Gender Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/gender_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/relationship_cardview">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Gender Title -->
-                    <TextView
-                            android:id="@+id/gender_title"
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Gneder"
-
-                            android:textColor="#777777"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-
-                    <!-- Gender -->
-                    <TextView
-                            android:id="@+id/gender"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-light"
-
-                            android:text="Male"
-                            android:textColor="#555555"
-                            android:textSize="13sp"
-
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/gender_title"
-                            app:layout_constraintTop_toTopOf="@id/gender_title"
-
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- DOB Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/dob_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/gender_cardview">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Dob Title -->
-                    <TextView
-                            android:id="@+id/dob_title"
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Date of Birth"
-
-                            android:textColor="#777777"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-
-                    <!-- DOB -->
-                    <TextView
-                            android:id="@+id/dob"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-light"
-
-                            android:text="01/01/1991"
-                            android:textColor="#555555"
-                            android:textSize="13sp"
-
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/dob_title"
-                            app:layout_constraintTop_toTopOf="@id/dob_title"
-
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            !-- Occupation Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/occupation_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/dob_cardview">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Occupation Title -->
-                    <TextView
-                            android:id="@+id/occupation_title"
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Occupation"
-
-                            android:textColor="#777777"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-
-                    <!-- Occupation -->
-                    <TextView
-                            android:id="@+id/occupation"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-light"
-
-                            android:text="Architect"
-                            android:textColor="#555555"
-                            android:textSize="13sp"
-
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/occupation_title"
-                            app:layout_constraintTop_toTopOf="@id/occupation_title"
-
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-
-            !-- Address Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/address_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/occupation_cardview">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Address Title -->
-                    <TextView
-                            android:id="@+id/address_title"
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Addess Mentioned\nin the policy"
-
-                            android:textColor="#777777"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-
-                    <!-- Address -->
-                    <TextView
-                            android:id="@+id/address"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-light"
-
-                            android:text="116/A pratap enclave mohan gardan new delhi 110059"
-                            android:textColor="#555555"
-                            android:textSize="13sp"
-
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/address_title"
-                            app:layout_constraintTop_toTopOf="@id/address_title"
-                            app:layout_constraintEnd_toEndOf="parent"
-
-
-
-                            />
-
-                    !--seprator -->
-
-                    <View
-                            android:layout_width="0dp"
-                            android:layout_height="10dp"
-
-                            android:background="@color/white"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/address"
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            !-- nominee_seprator -->
-            <View
-                    android:id="@+id/nominee_seprator"
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-
-                    android:background="#dcdcdc"
-
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/address_cardview"
-
-                    />
-
-            <!-- Nominee Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/nominee_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/nominee_seprator">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Nominee Title -->
-
-                    <TextView
-                            android:id="@+id/nominee_title"
-                            android:layout_width="150dp"
-                            android:layout_height="20dp"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Nominee"
-
-                            android:textColor="#008391"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-
-                    <androidx.appcompat.widget.AppCompatImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/edit"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!--Nominee  Name Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/nominee_name_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="@id/nominee_cardview"
-                    app:layout_constraintStart_toStartOf="@id/nominee_cardview"
-                    app:layout_constraintTop_toBottomOf="@id/nominee_cardview">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Name Title -->
-
-                    <TextView
-                            android:id="@+id/nominee_name_title"
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-
-                            android:text="Name"
-                            android:textColor="#777777"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:fontFamily="sans-serif-medium"
-
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-                    <!-- Name -->
-                    <TextView
-                            android:id="@+id/nominee_name"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-light"
-
-                            android:text="Mrs Shreya Saini"
-                            android:textColor="#555555"
-                            android:textSize="13sp"
-
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/nominee_name_title"
-                            app:layout_constraintTop_toTopOf="@id/nominee_name_title"
-
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- Nominee RelationShip Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/nominee_relationship_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/nominee_name_cardview">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- relationship Title -->
-                    <TextView
-                            android:id="@+id/nominee_relationship_title"
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Relationship with\nPolicy Holder"
-
-                            android:textColor="#777777"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-
-                    <!-- RelationShip -->
-                    <TextView
-                            android:id="@+id/nominee_relationship"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-light"
-
-                            android:text="Wife"
-                            android:textColor="#555555"
-                            android:textSize="13sp"
-
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/nominee_relationship_title"
-                            app:layout_constraintTop_toTopOf="@id/nominee_relationship_title"
-
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            !-- nominee_relationship_seprator -->
-            <View
-                    android:id="@+id/nominee_relationship_seprator"
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-
-                    android:background="#dcdcdc"
-
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginEnd="10dp"
-
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/nominee_relationship_cardview"
-
-                    />
-
-            <!-- Member Profile Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/member_profile_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/nominee_relationship_seprator">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Nominee Title -->
-
-                    <TextView
-                            android:id="@+id/member_profile_title"
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="15dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Members Profile"
-
-                            android:textColor="#008391"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Add/Remove Member"
-                            android:textColor="#E64E1C"
-                            android:layout_marginRight="15dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="@id/member_profile_title"
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <!--Member ViewPager-->
-            <androidx.viewpager.widget.ViewPager
-                    android:id="@+id/member_viewPager"
-                    android:layout_width="0dp"
-                    android:layout_height="380dp"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/member_profile_cardview"
+                    app:layout_constraintTop_toBottomOf="@+id/policy_seprator"
                     >
 
-            </androidx.viewpager.widget.ViewPager>
-
-
-            <!--Member TabLayout-->
-            <com.google.android.material.tabs.TabLayout
-                    android:id="@+id/member_tabLayout"
-                    android:layout_width="0dp"
-                    android:layout_height="30dp"
-                    android:background="#F0F0F0"
-
-                    app:layout_constraintTop_toBottomOf="@id/member_viewPager"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:tabGravity="center"
-                    app:tabIndicatorHeight="0dp"
-                    app:tabBackground="@drawable/tab_selector"
-
-
-                    />
-
-
-            <!-- Payment Details Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/payment_details_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/member_tabLayout">
-
                 <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
 
-                    <!-- payment Details Title -->
-
-                    <TextView
-                            android:id="@+id/payment_details_title"
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Payment Details"
-
-                            android:textColor="#008391"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
+                        >
 
 
-                            />
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- Premium Paid Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/premium_paid_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="@id/payment_details_cardview"
-                    app:layout_constraintStart_toStartOf="@id/payment_details_cardview"
-                    app:layout_constraintTop_toBottomOf="@id/payment_details_cardview">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Payment Title -->
-
-                    <TextView
-                            android:id="@+id/payment_title"
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-
-                            android:text="Premium Paid"
-                            android:textColor="#777777"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:fontFamily="sans-serif-medium"
-
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-                    <!-- payment -->
-                    <TextView
-                            android:id="@+id/payment"
-                            android:layout_width="wrap_content"
+                    <!-- My Profile Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/my_profile_cardview"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            >
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- Policy Details Title -->
+
+                            <TextView
+                                    android:id="@+id/my_profile_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="20dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="My Profile"
+
+                                    android:textColor="#008391"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/edit"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- Name Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/member_name_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="@id/my_profile_cardview"
+                            app:layout_constraintStart_toStartOf="@id/my_profile_cardview"
+                            app:layout_constraintTop_toBottomOf="@id/my_profile_cardview">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- Name Title -->
+
+                            <TextView
+                                    android:id="@+id/name_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+
+                                    android:text="Name"
+                                    android:textColor="#777777"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:fontFamily="sans-serif-medium"
+
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+                            <!-- Name -->
+                            <TextView
+                                    android:id="@+id/name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-light"
+
+                                    android:text="Mr Tasdeek Raza G"
+                                    android:textColor="#555555"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toEndOf="@id/name_title"
+                                    app:layout_constraintTop_toTopOf="@id/name_title"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- Member Id Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/member_id_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/member_name_cardview">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- Member Id Title -->
+
+                            <TextView
+                                    android:id="@+id/member_id_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Member Id"
+
+                                    android:textColor="#777777"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+                            <!-- Member Id -->
+                            <TextView
+                                    android:id="@+id/member_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-light"
+
+                                    android:text="100075859"
+                                    android:textColor="#555555"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toEndOf="@id/member_id_title"
+                                    app:layout_constraintTop_toTopOf="@id/member_id_title"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- Phone Number Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/phone_number_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/member_id_cardview">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- Phone Number Title -->
+                            <TextView
+                                    android:id="@+id/phone_number_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Phone Number"
+
+                                    android:textColor="#777777"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+
+                            <!-- Phone Number -->
+                            <TextView
+                                    android:id="@+id/phone_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-light"
+
+                                    android:text="9971385593"
+                                    android:textColor="#555555"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toEndOf="@id/phone_number_title"
+                                    app:layout_constraintTop_toTopOf="@id/phone_number_title"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- Email Id Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/email_id_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/phone_number_cardview">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- email Title -->
+                            <TextView
+                                    android:id="@+id/email_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Email Id"
+
+                                    android:textColor="#777777"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+
+                            <!-- Email -->
+                            <TextView
+                                    android:id="@+id/email"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-light"
+
+                                    android:text="Kumar.puneet119@gmail.com"
+                                    android:textColor="#555555"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toEndOf="@id/email_title"
+                                    app:layout_constraintTop_toTopOf="@id/email_title"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- RelationShip Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/relationship_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/email_id_cardview">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- relationship Title -->
+                            <TextView
+                                    android:id="@+id/relationship_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Relationship with\nPolicy Holder"
+
+                                    android:textColor="#777777"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+
+                            <!-- RelationShip -->
+                            <TextView
+                                    android:id="@+id/relationship"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-light"
+
+                                    android:text="Policy Holder"
+                                    android:textColor="#555555"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toEndOf="@id/relationship_title"
+                                    app:layout_constraintTop_toTopOf="@id/relationship_title"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Gender Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/gender_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/relationship_cardview">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- Gender Title -->
+                            <TextView
+                                    android:id="@+id/gender_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Gneder"
+
+                                    android:textColor="#777777"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+
+                            <!-- Gender -->
+                            <TextView
+                                    android:id="@+id/gender"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-light"
+
+                                    android:text="Male"
+                                    android:textColor="#555555"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toEndOf="@id/gender_title"
+                                    app:layout_constraintTop_toTopOf="@id/gender_title"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- DOB Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/dob_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/gender_cardview">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- Dob Title -->
+                            <TextView
+                                    android:id="@+id/dob_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Date of Birth"
+
+                                    android:textColor="#777777"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+
+                            <!-- DOB -->
+                            <TextView
+                                    android:id="@+id/dob"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-light"
+
+                                    android:text="01/01/1991"
+                                    android:textColor="#555555"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toEndOf="@id/dob_title"
+                                    app:layout_constraintTop_toTopOf="@id/dob_title"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    !-- Occupation Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/occupation_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/dob_cardview">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- Occupation Title -->
+                            <TextView
+                                    android:id="@+id/occupation_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Occupation"
+
+                                    android:textColor="#777777"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+
+                            <!-- Occupation -->
+                            <TextView
+                                    android:id="@+id/occupation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-light"
+
+                                    android:text="Architect"
+                                    android:textColor="#555555"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toEndOf="@id/occupation_title"
+                                    app:layout_constraintTop_toTopOf="@id/occupation_title"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    !-- Address Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/address_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/occupation_cardview">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- Address Title -->
+                            <TextView
+                                    android:id="@+id/address_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Addess Mentioned\nin the policy"
+
+                                    android:textColor="#777777"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+
+                            <!-- Address -->
+                            <TextView
+                                    android:id="@+id/address"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-light"
+
+                                    android:text="116/A pratap enclave mohan gardan new delhi 110059"
+                                    android:textColor="#555555"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toEndOf="@id/address_title"
+                                    app:layout_constraintTop_toTopOf="@id/address_title"
+                                    app:layout_constraintEnd_toEndOf="parent"
+
+
+
+                                    />
+
+                            !--seprator -->
+
+                            <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="10dp"
+
+                                    android:background="@color/white"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/address"
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    !-- nominee_seprator -->
+                    <View
+                            android:id="@+id/nominee_seprator"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+
+                            android:background="#dcdcdc"
 
                             android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-light"
-
-                            android:text="3333.89"
-                            android:textColor="#555555"
-                            android:textSize="13sp"
-
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/payment_title"
-                            app:layout_constraintTop_toTopOf="@id/payment_title"
-
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            !-- premium_seprator -->
-            <View
-                    android:id="@+id/premium_seprator"
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-
-                    android:background="#dcdcdc"
-
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginEnd="10dp"
-
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/premium_paid_cardview"
-
-                    />
-
-
-            <!-- Dispatch Details Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/dispatch_details_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/premium_seprator">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Dispatch Details Title -->
-
-                    <TextView
-                            android:id="@+id/dispatch_details_title"
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Dispatch Details"
-
-                            android:textColor="#008391"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
+                            android:layout_marginRight="10dp"
 
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- Date Of Dispatch Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/date_of_dipatch_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="@id/dispatch_details_cardview"
-                    app:layout_constraintStart_toStartOf="@id/dispatch_details_cardview"
-                    app:layout_constraintTop_toBottomOf="@id/dispatch_details_cardview">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Date Of Dispatch Title -->
-
-                    <TextView
-                            android:id="@+id/date_of_dispatch_title"
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-
-                            android:text="Date of Dispatch"
-                            android:textColor="#777777"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:fontFamily="sans-serif-medium"
-
-
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/address_cardview"
 
                             />
-                    <!-- date_of_dispatch -->
-                    <TextView
-                            android:id="@+id/date_of_dispatch"
-                            android:layout_width="wrap_content"
+
+                    <!-- Nominee Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/nominee_cardview"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/nominee_seprator">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- Nominee Title -->
+
+                            <TextView
+                                    android:id="@+id/nominee_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="20dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Nominee"
+
+                                    android:textColor="#008391"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/edit"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!--Nominee  Name Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/nominee_name_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="@id/nominee_cardview"
+                            app:layout_constraintStart_toStartOf="@id/nominee_cardview"
+                            app:layout_constraintTop_toBottomOf="@id/nominee_cardview">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- Name Title -->
+
+                            <TextView
+                                    android:id="@+id/nominee_name_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+
+                                    android:text="Name"
+                                    android:textColor="#777777"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:fontFamily="sans-serif-medium"
+
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+                            <!-- Name -->
+                            <TextView
+                                    android:id="@+id/nominee_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-light"
+
+                                    android:text="Mrs Shreya Saini"
+                                    android:textColor="#555555"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toEndOf="@id/nominee_name_title"
+                                    app:layout_constraintTop_toTopOf="@id/nominee_name_title"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- Nominee RelationShip Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/nominee_relationship_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/nominee_name_cardview">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- relationship Title -->
+                            <TextView
+                                    android:id="@+id/nominee_relationship_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Relationship with\nPolicy Holder"
+
+                                    android:textColor="#777777"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+
+                            <!-- RelationShip -->
+                            <TextView
+                                    android:id="@+id/nominee_relationship"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-light"
+
+                                    android:text="Wife"
+                                    android:textColor="#555555"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toEndOf="@id/nominee_relationship_title"
+                                    app:layout_constraintTop_toTopOf="@id/nominee_relationship_title"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    !-- nominee_relationship_seprator -->
+                    <View
+                            android:id="@+id/nominee_relationship_seprator"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+
+                            android:background="#dcdcdc"
 
                             android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-light"
-
-                            android:text="12/04/2018 09:41 PM"
-                            android:textColor="#555555"
-                            android:textSize="13sp"
-
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/date_of_dispatch_title"
-                            app:layout_constraintTop_toTopOf="@id/date_of_dispatch_title"
-
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- Status Of Dispatch Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/status_of_dipatch_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="@id/date_of_dipatch_cardview"
-                    app:layout_constraintStart_toStartOf="@id/date_of_dipatch_cardview"
-                    app:layout_constraintTop_toBottomOf="@id/date_of_dipatch_cardview">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Status Of Dispatch Title -->
-
-                    <TextView
-                            android:id="@+id/status_of_dispatch_title"
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-
-                            android:text="Status"
-                            android:textColor="#777777"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:fontFamily="sans-serif-medium"
-
+                            android:layout_marginStart="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
 
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/nominee_relationship_cardview"
+
+                            />
+
+                    <!-- Member Profile Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/member_profile_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/nominee_relationship_seprator">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- Nominee Title -->
+
+                            <TextView
+                                    android:id="@+id/member_profile_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="15dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Members Profile"
+
+                                    android:textColor="#008391"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add/Remove Member"
+                                    android:textColor="#E64E1C"
+                                    android:layout_marginRight="15dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/member_profile_title"
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--Member ViewPager-->
+                    <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/member_viewPager"
+                            android:layout_width="0dp"
+                            android:layout_height="380dp"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/member_profile_cardview"
+                            >
+
+                    </androidx.viewpager.widget.ViewPager>
+
+
+                    <!--Member TabLayout-->
+                    <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/member_tabLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:background="#F0F0F0"
+
+                            app:layout_constraintTop_toBottomOf="@id/member_viewPager"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:tabGravity="center"
+                            app:tabIndicatorHeight="0dp"
+                            app:tabBackground="@drawable/tab_selector"
 
 
                             />
-                    <!-- status_of_dispatch -->
-                    <TextView
-                            android:id="@+id/status_of_dispatch"
-                            android:layout_width="wrap_content"
+
+
+                    <!-- Payment Details Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/payment_details_cardview"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/member_tabLayout">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- payment Details Title -->
+
+                            <TextView
+                                    android:id="@+id/payment_details_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Payment Details"
+
+                                    android:textColor="#008391"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Premium Paid Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/premium_paid_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="@id/payment_details_cardview"
+                            app:layout_constraintStart_toStartOf="@id/payment_details_cardview"
+                            app:layout_constraintTop_toBottomOf="@id/payment_details_cardview">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- Payment Title -->
+
+                            <TextView
+                                    android:id="@+id/payment_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+
+                                    android:text="Premium Paid"
+                                    android:textColor="#777777"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:fontFamily="sans-serif-medium"
+
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+                            <!-- payment -->
+                            <TextView
+                                    android:id="@+id/payment"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-light"
+
+                                    android:text="3333.89"
+                                    android:textColor="#555555"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toEndOf="@id/payment_title"
+                                    app:layout_constraintTop_toTopOf="@id/payment_title"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    !-- premium_seprator -->
+                    <View
+                            android:id="@+id/premium_seprator"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+
+                            android:background="#dcdcdc"
 
                             android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-light"
-
-                            android:text="Delivered"
-                            android:textColor="#555555"
-                            android:textSize="13sp"
-
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/status_of_dispatch_title"
-                            app:layout_constraintTop_toTopOf="@id/status_of_dispatch_title"
-
-
-                            />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- Date Of Delivery Card View -->
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/date_of_delivery_cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardElevation="0dp"
-                    app:layout_constraintEnd_toEndOf="@id/status_of_dipatch_cardview"
-                    app:layout_constraintStart_toStartOf="@id/status_of_dipatch_cardview"
-                    app:layout_constraintTop_toBottomOf="@id/status_of_dipatch_cardview">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <!-- Date Of Delivery Title -->
-
-                    <TextView
-                            android:id="@+id/date_of_delivery_title"
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-
-                            android:text="Date of Delivery"
-                            android:textColor="#777777"
-                            android:textSize="13sp"
-                            android:textStyle="normal"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:fontFamily="sans-serif-medium"
-
+                            android:layout_marginStart="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
 
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/premium_paid_cardview"
 
                             />
-                    <!-- date_of_delivery -->
-                    <TextView
-                            android:id="@+id/date_of_delivery"
-                            android:layout_width="wrap_content"
+
+
+                    <!-- Dispatch Details Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/dispatch_details_cardview"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/premium_seprator">
 
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="sans-serif-light"
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
 
-                            android:text="13/04/2018 06:23 PM"
-                            android:textColor="#555555"
-                            android:textSize="13sp"
+                            <!-- Dispatch Details Title -->
 
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/date_of_delivery_title"
-                            app:layout_constraintTop_toTopOf="@id/date_of_delivery_title"
+                            <TextView
+                                    android:id="@+id/dispatch_details_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Dispatch Details"
+
+                                    android:textColor="#008391"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
 
 
-                            />
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Date Of Dispatch Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/date_of_dipatch_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="@id/dispatch_details_cardview"
+                            app:layout_constraintStart_toStartOf="@id/dispatch_details_cardview"
+                            app:layout_constraintTop_toBottomOf="@id/dispatch_details_cardview">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- Date Of Dispatch Title -->
+
+                            <TextView
+                                    android:id="@+id/date_of_dispatch_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+
+                                    android:text="Date of Dispatch"
+                                    android:textColor="#777777"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:fontFamily="sans-serif-medium"
+
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+                            <!-- date_of_dispatch -->
+                            <TextView
+                                    android:id="@+id/date_of_dispatch"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-light"
+
+                                    android:text="12/04/2018 09:41 PM"
+                                    android:textColor="#555555"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toEndOf="@id/date_of_dispatch_title"
+                                    app:layout_constraintTop_toTopOf="@id/date_of_dispatch_title"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Status Of Dispatch Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/status_of_dipatch_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="@id/date_of_dipatch_cardview"
+                            app:layout_constraintStart_toStartOf="@id/date_of_dipatch_cardview"
+                            app:layout_constraintTop_toBottomOf="@id/date_of_dipatch_cardview">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- Status Of Dispatch Title -->
+
+                            <TextView
+                                    android:id="@+id/status_of_dispatch_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+
+                                    android:text="Status"
+                                    android:textColor="#777777"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:fontFamily="sans-serif-medium"
+
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+                            <!-- status_of_dispatch -->
+                            <TextView
+                                    android:id="@+id/status_of_dispatch"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-light"
+
+                                    android:text="Delivered"
+                                    android:textColor="#555555"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toEndOf="@id/status_of_dispatch_title"
+                                    app:layout_constraintTop_toTopOf="@id/status_of_dispatch_title"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- Date Of Delivery Card View -->
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/date_of_delivery_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="@id/status_of_dipatch_cardview"
+                            app:layout_constraintStart_toStartOf="@id/status_of_dipatch_cardview"
+                            app:layout_constraintTop_toBottomOf="@id/status_of_dipatch_cardview">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <!-- Date Of Delivery Title -->
+
+                            <TextView
+                                    android:id="@+id/date_of_delivery_title"
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+
+                                    android:text="Date of Delivery"
+                                    android:textColor="#777777"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:fontFamily="sans-serif-medium"
+
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    />
+                            <!-- date_of_delivery -->
+                            <TextView
+                                    android:id="@+id/date_of_delivery"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-light"
+
+                                    android:text="13/04/2018 06:23 PM"
+                                    android:textColor="#555555"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toEndOf="@id/date_of_delivery_title"
+                                    app:layout_constraintTop_toTopOf="@id/date_of_delivery_title"
+
+
+                                    />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             </androidx.cardview.widget.CardView>
+
+
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
