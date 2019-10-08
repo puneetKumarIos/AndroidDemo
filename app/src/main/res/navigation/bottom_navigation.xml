@@ -9,7 +9,7 @@
     <!--HOME-->
     <fragment
             android:id="@+id/navigation_home"
-            android:name="com.example.constraintslayout.ui.homeActivity.HomeScreenFrg"
+            android:name="com.example.constraintslayout.ui.Fragments.Home.HomeScreenFrg"
             android:label="@string/title_home"
             tools:layout="@layout/fragment_home_screen" />
 
@@ -17,7 +17,7 @@
 
     <fragment
             android:id="@+id/navigation_my_claims"
-            android:name="com.example.constraintslayout.ui.claimList.MyClaimListFrg"
+            android:name="com.example.constraintslayout.ui.Fragments.ClaimList.MyClaimListFrg"
             android:label="@string/title_my_claims"
             tools:layout="@layout/fragment_my_claim_list" >
         <action
@@ -35,7 +35,7 @@
 
     <fragment
             android:id="@+id/claimDetailsFrg"
-            android:name="com.example.constraintslayout.ui.cliamDetails.ClaimDetailsFrg"
+            android:name="com.example.constraintslayout.ui.Fragments.CliamDetails.ClaimDetailsFrg"
             android:label="fragment_claim_details_frg"
             tools:layout="@layout/fragment_claim_details_frg" >
         <argument
@@ -49,7 +49,7 @@
 
     <fragment
             android:id="@+id/navigation_my_policy"
-            android:name="com.example.constraintslayout.ui.policyList.MyPolicyListFrg"
+            android:name="com.example.constraintslayout.ui.Fragments.PolicyList.MyPolicyListFrg"
             android:label="@string/title_my_policy"
             tools:layout="@layout/fragment_my_policy_list" >
         <action
@@ -66,7 +66,7 @@
 
     <fragment
             android:id="@+id/policyDetails"
-            android:name="com.example.constraintslayout.ui.policyDetails.PolicyDetails"
+            android:name="com.example.constraintslayout.ui.Fragments.PolicyDetails.PolicyDetails"
             android:label="fragment_policy_details"
             tools:layout="@layout/fragment_policy_details" />
 
@@ -75,7 +75,7 @@
 
     <fragment
             android:id="@+id/navigation_stay_active"
-            android:name="com.example.constraintslayout.ui.stayActive.StayActiveFrg"
+            android:name="com.example.constraintslayout.ui.Fragments.StayActive.StayActiveFrg"
             android:label="@string/title_stay_active"
             tools:layout="@layout/fragment_stay_active" />
 
@@ -83,7 +83,7 @@
 
     <fragment
             android:id="@+id/navigation_more"
-            android:name="com.example.constraintslayout.ui.more.MoreFrg"
+            android:name="com.example.constraintslayout.ui.Fragments.More.MoreFrg"
             android:label="@string/title_more"
             tools:layout="@layout/fragment_more" />
 
